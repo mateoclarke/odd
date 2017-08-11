@@ -8,11 +8,7 @@
     <main>
       {{ content }}
     </main>
-    {% if page.url != '/join.html' %}
-      {% include extended_footer.html %}
-    {% endif %}
     {% include footer.html %}
-    {% include site_alert.html %}
   </body>
   {% include analytics.html %}
 </html>
