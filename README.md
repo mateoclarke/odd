@@ -9,7 +9,7 @@ Setup
 ---
 1. If you're using a Mac, install homebrew (see http://brew.sh/)
 2. After installing git (`brew install git`), `cd` to the directory where you want to check-out the site, and then clone it (`git clone https://github.com/usds/website.git`)
-3. Install rvm (`\curl -sSL https://get.rvm.io | sudo bash -s stable`), make your current user a member of the rvm group, and then install a new version of ruby (`rvm install 2.3.1`)
+3. Install rvm (`\curl -sSL https://get.rvm.io | sudo bash -s stable`), make your current user a member of the rvm group, and then install a new version of ruby (`rvm install 2.3.1`) or make sure you're using it: `rvm use 2.3.1`
 4. Install the `bundler` gem, then use bundler to install other project dependencies (`gem install bundler && bundle install`)
 
 Running
@@ -24,7 +24,7 @@ The Fellows program's blog posts are currently maintained on Medium in a publica
 To create a new blog summary:
 ----
 
-Create a new file in the `_blog_summaries` folder. Follow the file naming convention of starting the file name with the date of the blog post in the `YYYY-MM-DD` format, followed by a short description of the post, separated by an underscore. For example, to create a summary of a post about penguins published on April 1, 2016, you would create a file named `2016-04-01_penguins.md`.
+Create a new file in the `_posts` folder. Follow the file naming convention of starting the file name with the date of the blog post in the `YYYY-MM-DD` format, followed by a short description of the post, separated by an underscore. For example, to create a summary of a post about penguins published on April 1, 2016, you would create a file named `2016-04-01_penguins.md`.
 
 Each blog post summary file must start with front-matter, in the YML format. This sets some variables that are used to build the blog summary page. After the front-matter, the remaining content in the markdown file will be used to generate the post summary. This content can be supplied in markdown format. Raw HTML can also be used.
 
@@ -53,4 +53,4 @@ A few notes on the above fields:
 
 Below the front matter (i.e. after the `---`) is the text that will appear as the summary of the blog. Ordinarily, this can be directly copied from the lede in our Medium post. Generally, this should be one single paragraph, without formatting. It can include links where appropriate. Links can be specified using the Markdown linking format, or by writing `<a>` tags directly.
 
-Once a file matching this specification is saved into the `_blog_summaries` folder, the `/blog` page will be automatically re-generated to display the most recent summaries, with the most recent post appearing first. If this change is merged to the `gh-pages` branch of the site, the blog page will be updated.
+Once a file matching this specification is saved into the `_posts` folder, the `/blog` page will be automatically re-generated to display the most recent summaries, with the most recent post appearing first. If this change is merged to the `gh-pages` branch of the site, the blog page will be updated.

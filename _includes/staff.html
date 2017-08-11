@@ -1,5 +1,5 @@
 
-  {% assign members = site.staff_bios | sort: 'bio' %}
+  {% assign members = site.people | sort: 'bio' %}
   {% for member in members limit: include.staffer_limit %}
 
   {% cycle 'staff grid' : '<div class="usa-grid">', nil, nil %}

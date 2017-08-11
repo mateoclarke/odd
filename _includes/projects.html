@@ -2,7 +2,7 @@
 {% assign num_projects = include.num_projects %}
 
 {% assign column_index = num_columns | minus: 1 %}
-{% for project in site.project_summaries limit: num_projects %}
+{% for project in site.projects limit: num_projects %}
   {% assign index_mod = forloop.index0 | modulo:num_columns %}
 
   {% if index_mod == 0 %}
