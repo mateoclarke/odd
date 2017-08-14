@@ -1,20 +1,20 @@
----		
+---
 title: Service Designer		
 is_fellow: true		
 lever_link: https://jobs.lever.co/austintexas/7a6e9720-8cb4-4439-a1cf-0d4dbf497189/apply		
 list_order: 2		
----		
+---
 
 We’re looking for an experienced service designer to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design. Our teams are working to improve a wide range of city services, including researching and redesigning our [permitting processes](http://www.austintexas.gov/department/development-services), prototyping ways to change behaviors around [recycling and composting](http://www.austintexas.gov/department/austin-resource-recovery), building the next generation of [ATXFloods](https://www.atxfloods.com/), , improving services for people experiencing homelessness, and creating city-wide standards for service design, web development, and user research.		
-		
+
 You’ll also serve as an expert and educator in your discipline, establishing new practices that can work across departments and providing guidance and training for other fellows and city staff.		
-		
+
 #### Salary		
-		
+
 $75,000-$86,000, commensurate with experience		
-		
+
 #### What you’ll do:		
-		
+
 * Lead service design methods on a multidisciplinary team to reimagine how the City of Austin provides services.		
 * Create services and solutions that will meet the needs of different stakeholders that might have opposing opinions/view/working methods		
 * Create and implement a service design strategy that addresses findings from user research  		
@@ -28,9 +28,9 @@ $75,000-$86,000, commensurate with experience
 * Work with stakeholders to assess legacy systems and identify opportunities for improved user experience and the sustainability of future systems		
 * Share what we make and how we make it through meetups, blog posts, and other functions		
 * Serve as a subject matter expert in the hiring process for additional Design, Technology, and Innovation Fellows		
-		
+
 #### What we’re looking for		
-		
+
 * 3+ years of professional experience designing large-scale services using service design methods		
 * Experience collaborating on multidisciplinary teams; flexibility and openness to adapting service design methods to fit the needs of a multidisciplinary team		
 * Ability to prototype in different media - digital, analog, physical, atmospheric, etc.		
@@ -45,8 +45,8 @@ $75,000-$86,000, commensurate with experience
 * Knowledge of design thinking, user-centered design, and agile design methodologies, including expertise in determining when and how to use specific approaches, deliverables, and facilitation methods		
 * Experience facilitating workshops and other meetings across the stakeholder spectrum, from senior-level stakeholders to everyday users		
 * A passion for public service and a commitment to doing the hard work that’s necessary to improve our city services, especially the willingness to work on emotionally demanding topics.		
-		
+
 #### Minimum qualifications		
-		
+
 * Three years of relevant work experience		
 * Graduation from an accredited four-year college or university with major course work in a related field. An additional 4 years of experience can substitute this education requirement.
