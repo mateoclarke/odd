@@ -18,7 +18,11 @@
 
     {% if parent_slug == include.base_path %}
       <li>
-        <a href="{{ item.url }}"{% if page.url contains item.url %} class="active"{% endif %}>{{ item.title }}</a>
+        {% unless item.section_header_only %}
+          <a href="{{ item.url }}"{% if page.url contains item.url %} class="active"{% endif %}>{{ item.title }}</a>
+        {% else %}
+          {{ item.title }}
+          {% endunless %}
         {% include recursive-nav.html items=include.items base_path=item.url recursive_only=true %}
       </li>
     {% endif %}
