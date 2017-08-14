@@ -34,12 +34,13 @@ collections:
     title: Staff
     output: false
     permalink: /:collection/:path/
-  jobs:
-    title: Jobs
-    output: true
-    permalink: /join/:path/
 
 defaults:
+- scope:
+    type: 'pages'
+    path: 'join'
+  values:
+    permalink: /join/:basename/
 # - scope:
 #     path: ''
 #   values:

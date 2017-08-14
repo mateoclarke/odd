@@ -1,5 +1,5 @@
 ---		
-job_title: Content Strategist		
+title: Content Strategist		
 is_fellow: true		
 lever_link: https://jobs.lever.co/austintexas/a57be492-9bf3-41f3-a329-2751fea9256b/apply		
 list_order: 6		

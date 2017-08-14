@@ -1,21 +1,25 @@
 {% capture list_items %}
-  {% unless include.recursive %}
-    {% assign index = site.pages | where: "url", include.base | first %}
+  {% unless include.recursive_only %}
+  <!-- GET THIS PAGE AS FIRST ITEM -->
+    {% assign index = site.pages | where: "url", include.base_path | first %}
     <li>
       <a href="{{ index.url }}"{% if page.url == index.url %} class="active"{% endif %}>
         {{ index.nav_title | default: index.title }}
+
       </a>
     </li>
   {% endunless %}
 
   {% for item in include.items %}
-    {% assign item_slug = item.url | split: "/" | last | append: "/" %}
-    {% assign parent_slug = item.url | remove: item_slug %}
+  <!-- START GETTING CHILD ITEMS OF THIS PAGE -->
 
-    {% if parent_slug == include.base %}
+    {% assign item_slug = item.path | remove: ".md" | split: "/" | last | append: "/" %}
+    {% assign parent_slug = item.path | remove: ".md" | prepend: "/" | append: "/" | remove: item_slug %}
+
+    {% if parent_slug == include.base_path %}
       <li>
         <a href="{{ item.url }}"{% if page.url contains item.url %} class="active"{% endif %}>{{ item.title }}</a>
-        {% include recursive-nav.html items=include.items base=item.url recursive=true %}
+        {% include recursive-nav.html items=include.items base_path=item.url recursive_only=true %}
       </li>
     {% endif %}
   {% endfor %}
@@ -25,7 +29,7 @@
 
 {% if list_items != empty %}
   {% capture list_class %}
-    {% if include.recursive %}inner-list{% else %}list{% endif %}
+    {% if include.recursive_only %}inner-list{% else %}list{% endif %}
   {% endcapture %}
   <ul class="{{ list_class }}">{{ list_items }}</ul>
 {% endif %}

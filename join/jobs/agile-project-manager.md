@@ -1,5 +1,5 @@
 ---
-job_title: Agile Project Manager
+title: Agile Project Manager
 is_fellow: true
 lever_link: https://jobs.lever.co/austintexas/3a8b0b05-929e-45cf-9170-5d44c357745c/apply
 list_order: 1

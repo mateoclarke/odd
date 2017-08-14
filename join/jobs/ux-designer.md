@@ -1,5 +1,5 @@
 ---
-job_title: User Experience Designer
+title: User Experience Designer
 is_fellow: true
 lever_link: https://jobs.lever.co/austintexas/afad8fdb-8f52-4cf9-8f14-a396ee890b20/apply
 list_order: 3

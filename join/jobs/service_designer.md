@@ -1,5 +1,5 @@
 ---		
-job_title: Service Designer		
+title: Service Designer		
 is_fellow: true		
 lever_link: https://jobs.lever.co/austintexas/7a6e9720-8cb4-4439-a1cf-0d4dbf497189/apply		
 list_order: 2		

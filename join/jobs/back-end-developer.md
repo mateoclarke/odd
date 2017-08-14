@@ -1,12 +1,12 @@
 ---
-job_title: Front-End Web Developer
+title: Back-End Web Developer
 is_fellow: true
-lever_link: https://jobs.lever.co/austintexas/eb9dc901-e786-4241-b41c-ed7d99f00100/apply
-list_order: 8
+lever_link: https://jobs.lever.co/austintexas/037347fd-48b4-4c98-89c2-7477353945ac/apply
+list_order: 9
 
 ---
 
-We’re looking for a senior front-end developer to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design. Our teams are working to improve a wide range of city services, including researching and redesigning our [permitting processes](http://www.austintexas.gov/department/development-services), prototyping ways to change behaviors around [recycling and composting](http://www.austintexas.gov/department/austin-resource-recovery), building the next generation of [ATXFloods](https://www.atxfloods.com), improving services for people experiencing homelessness, and creating city-wide standards for interface design, web infrastructure, and automated testing.
+We’re looking for a senior back-end developer to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design. Our teams are working to improve a wide range of city services, including researching and redesigning our [permitting processes](http://www.austintexas.gov/department/development-services), prototyping ways to change behaviors around [recycling and composting](http://www.austintexas.gov/department/austin-resource-recovery), building the next generation of [ATXFloods](https://www.atxfloods.com), improving the digital presence of our [Convention Center](https://github.com/cityofaustin/austinconventioncenter.com), and creating city-wide standards for interface design, web infrastructure, and automated testing.
 
 You’ll also serve as an expert and educator in your discipline, establishing new practices that can work across departments and providing guidance and training for other fellows and city staff.
 
@@ -16,7 +16,7 @@ $75,000-$86,000, commensurate with experience
 
 #### What you’ll do:
 
-*   Work with other developers on the Innovation Fellows team to establish new standards and practices for front-end web development based on modern languages, frameworks, and best practices
+*   Work with other developers on the Innovation Fellows team to establish new standards and practices for web development based on modern languages, frameworks, and best practices
 *   Serve as a core contributor on multi-disciplinary project teams to improve city services
 *   Assist in scoping and prototyping activities for future design and development projects
 *   Work with stakeholders to assess legacy systems and identify opportunities for improved performance and the sustainability of future systems
@@ -28,8 +28,8 @@ $75,000-$86,000, commensurate with experience
 
 #### What we're looking for
 
-*   3+ years of professional experience developing large-scale interfaces, experiences, and applications
-*   Detailed understanding of and experience building client-side web interfaces and applications using modern JavaScript frameworks, web standards, and open source software
+*   3+ years of professional experience developing large-scale applications and services
+*   Detailed understanding of and experience building server-side web applications and services using modern languages, frameworks, and open source software
 *   Detailed understanding of and experience with continuous delivery, continuous integration testing, and cloud platforms
 *   Ability to engage with a wide range of digital specialists, suppliers, and stakeholders to define the best approaches to a problem
 *   Ability to quickly become familiar with emerging technologies and practices

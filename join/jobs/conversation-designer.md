@@ -1,5 +1,5 @@
 ---
-job_title: Conversation Designer / Facilitator
+title: Conversation Designer / Facilitator
 is_fellow: true
 lever_link: https://jobs.lever.co/austintexas/832e798e-2b3c-4493-a895-276753feafd7/apply
 list_order: 5
