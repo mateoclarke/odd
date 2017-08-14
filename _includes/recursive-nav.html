@@ -18,7 +18,7 @@
 
     {% if parent_slug == include.base_path %}
       <li>
-        {% unless item.section_header_only %}
+        {% unless item.layout == "redirect" %}
           <a href="{{ item.url }}"{% if page.url contains item.url %} class="active"{% endif %}>{{ item.title }}</a>
         {% else %}
           {{ item.title }}
