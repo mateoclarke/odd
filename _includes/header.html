@@ -1,78 +1,39 @@
-<header id="fixed-header" role="banner">
-  <div class="disclaimer-bar">
-    <div class="usa-grid">
-      <div class="usa-width-one-whole">
-        <div id="beta-notice" class="hidden-xs">
-          Forked from our friends at the <a href="https://usds.gov">U.S. Digital Service</a>
-        </div>
-        <!-- <img class="eop-seal" alt="An image City of Austin seal" src="/img/layout/seal.png" /> -->
-        <span class="hidden-xs">An official website of the </span>City of Austin
+<header class="pre-header">
+  <div class="header--translate">
+    <div role="menu" id="google_translate_element"></div>
+  </div>
+  <hr />
+
+  <div class="container-fluid">
+    <div class="row">
+      <button id="drawer-button--menu" class="col-xs usa-button mobile-menu-button">mobile menu button</button>
+      <hr />
+
+      <div class="no-logo start-xs col-xs">
+        <span>{{ site.data.labels.intro_markdown | strip_newlines | markdownify }}</span>
+      </div>
+      <div class="mobile-site-title start-xs col-xs">
+        <span>{{ site.data.labels.site_title }}</span>
+      </div>
+      <div class="control-translate end-xs start-sm col-xs">
+        <span id="drawer-button--translate">{{ site.data.labels.translate }}</span>
       </div>
     </div>
   </div>
-
-  <nav class="site-navbar">
-    <div class="desktop">
-      <ul class="usa-unstyled-list">
-        <li class="nav-item {% if page.url == '/team.html' %}active{% endif %}">
-          <a href="{{ site.baseurl }}/about"><span>About</span></a>
+</header>
+<header class="site-header">
+  <div class="container">
+    <div class="row">
+      <div class="center-xs col-xs-12">
+        <nav>
           <ul>
-            <li><a href="/innovation-fellows/team">The Team</a></li>
-
+            <li><a class="header-link-list" href="{{ site.baseurl }}/">{{ site.data.labels.home }}</a></li>
+            <li>More links here</li>
           </ul>
-        </li>
-        <li class="nav-item {% if page.url == '/projects.html' %}active{% endif %}">
-          <a href="{{ site.baseurl }}/projects"><span>Projects</span></a>
-        </li>
-        <li class="nav-centerpiece">
-          <a id="logo-desktop-full" href="{{ site.baseurl }}/">
-            <img alt="The logo of the Austin Innovation Fellows" src="{{ site.baseurl }}/img/layout/logo-full.png" />
-          </a>
-          <a id="logo-desktop-collapsed" href="{{ site.baseurl }}/">
-            <img alt="The logo of the Austin Innovation Fellows" src="{{ site.baseurl }}/img/layout/logo-collapsed.png" />
-          </a>
-        </li>
-        <li class="nav-item {% if page.url == '/blog.html' %}active{% endif %}">
-          <a href="{{ site.baseurl }}/civiqueso"><span>Civiqueso</span></a>
-        </li>
-        <li class="nav-item {% if page.url == '/join.html' %}active{% endif %}">
-          <a href="{{ site.baseurl }}/join"><span>Join us</span></a>
-        </li>
-      </ul>
-      <div id="submenu-background">&nbsp;</div>
-
-    </div>
-    <div class="mobile">
-      <a href="{{ site.baseurl }}/">
-        <img alt="The logo of the  Austin Innovation Fellows" src="{{ site.baseurl }}/img/layout/logo-collapsed.png" />
-      </a>
-      <button class="navbar-toggle collapsed">
-        <div class="navbar-text">Menu</div>
-        <span class="sr-only">Toggle navigation</span>
-        <span class="hamburger-patty"></span>
-        <span class="hamburger-patty"></span>
-        <span class="hamburger-patty"></span>
-      </button>
-      <div class="mobile-nav collapsed">
-        <ul class="usa-unstyled-list">
-          <li class="nav-item">
-            <a href="{{ site.baseurl }}/about">About</a>
-<!--             <ul>
-              <li class="nav-item"><a href="/mission">Our Mission</a></li>
-              <li class="nav-item"><a href="/values">Our Values</a></li>
-              <li class="nav-item"><a href="/story">Our Story</a></li>
-            </ul> -->
-          </li>
-          <li class="nav-item">
-            <a href="{{ site.baseurl }}/projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="{{ site.baseurl }}/civiqueso">Civiqueso</a>
-          </li>
-          <li class="nav-item">
-            <a href="{{ site.baseurl }}/join">Join us</a>
-          </li>
+          <a class="usa-button" href="#">Project site button</a>
+        </nav>
       </div>
     </div>
-  </nav>
+  </div>
 </header>
+<hr />

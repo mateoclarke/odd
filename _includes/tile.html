@@ -1,0 +1,11 @@
+{% assign title = include.tile %}
+<div class="tile tile--project col-xs-10 col-sm-6 col-md-4">
+  <a class="tile-link" href="{{ site.baseurl }}{{ tile.url }}" title="{{ tile.title }}"></a>
+  <div class="tile-outline">
+    <!-- img here -->
+    <div class="tile-text">
+      <h3 class="tile-title">{{ tile.title}}</h3>
+      <p class="tile-excerpt">{{ tile.excerpt }}</p>
+    </div>
+  </div>
+</div>

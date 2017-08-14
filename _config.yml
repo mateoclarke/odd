@@ -23,21 +23,21 @@ medium_url: https://medium.com/city-of-austin-design-technology-innovation
 markdown: kramdown
 collections:
   projects:
-    title:
-    output:
+    title: Projects
+    output: false
     permalink: /:collection/:path/
   press:
-    title:
-    output:
+    title: Press mentions
+    output: false
     permalink: /:collection/:path/
   people:
-    title:
-    output:
+    title: Staff
+    output: false
     permalink: /:collection/:path/
   jobs:
-    title:
-    output:
-    permalink: /:collection/:path/
+    title: Jobs
+    output: true
+    permalink: /join/:path/
 
 defaults:
 # - scope:
