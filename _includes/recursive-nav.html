@@ -15,6 +15,11 @@
 
     {% assign item_slug = item.path | remove: ".md" | split: "/" | last | append: "/" %}
     {% assign parent_slug = item.path | remove: ".md" | prepend: "/" | append: "/" | remove: item_slug %}
+    <!-- item.path: {{ item.path }} <br>
+    item_slug: {{ item_slug }} <br>
+    parent_slug: {{ parent_slug }} <br>
+    base_path: {{ include.base_path }}<br>
+    <hr> -->
 
     {% if parent_slug == include.base_path %}
       <li>
@@ -23,7 +28,8 @@
         {% else %}
           {{ item.title }}
           {% endunless %}
-        {% include recursive-nav.html items=include.items base_path=item.url recursive_only=true %}
+        {% assign inner_base_path = item.path | remove: ".md" | prepend: "/" | append: "/" %}
+        {% include recursive-nav.html items=include.items base_path=inner_base_path recursive_only=true %}
       </li>
     {% endif %}
   {% endfor %}
