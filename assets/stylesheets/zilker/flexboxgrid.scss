@@ -462,6 +462,10 @@ $lg-viewport: "only screen and (min-width: 75em)";
   .hidden-sm {
     display: none;
   }
+  
+  .hidden-xs {
+    display: inherit;
+  }
 }
 
 @media #{$md-viewport} {
