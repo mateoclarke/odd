@@ -1,35 +1,18 @@
 {% capture list_items %}
-  {% unless include.recursive_only %}
-  <!-- GET THIS PAGE AS FIRST ITEM -->
-    {% assign index = site.pages | where: "url", include.base_path | first %}
-    <li>
-      <a href="{{ index.url }}"{% if page.url == index.url %} class="active"{% endif %}>
-        {{ index.nav_title | default: index.title }}
-
-      </a>
-    </li>
-  {% endunless %}
-
   {% for item in include.items %}
-  <!-- START GETTING CHILD ITEMS OF THIS PAGE -->
 
     {% assign item_slug = item.path | remove: ".md" | split: "/" | last | append: "/" %}
     {% assign parent_slug = item.path | remove: ".md" | prepend: "/" | append: "/" | remove: item_slug %}
-    <!-- item.path: {{ item.path }} <br>
-    item_slug: {{ item_slug }} <br>
-    parent_slug: {{ parent_slug }} <br>
-    base_path: {{ include.base_path }}<br>
-    <hr> -->
 
     {% if parent_slug == include.base_path %}
       <li>
         {% unless item.layout == "redirect" %}
-          <a href="{{ item.url }}"{% if page.url contains item.url %} class="active"{% endif %}>{{ item.title }}</a>
+          <a href="{{ item.url }}"{% if page.url contains item.url %} title="{{ item.title }}" class="active"{% endif %} role="menuitem">{{ item.title }}</a>
         {% else %}
-          {{ item.title }}
+          <span class="list-heading">{{ item.title }}</span>
           {% endunless %}
         {% assign inner_base_path = item.path | remove: ".md" | prepend: "/" | append: "/" %}
-        {% include recursive-nav.html items=include.items base_path=inner_base_path recursive_only=true %}
+        {% include recursive-nav.html items=include.items base_path=inner_base_path recursive=true %}
       </li>
     {% endif %}
   {% endfor %}
@@ -38,8 +21,8 @@
 {% assign list_items = list_items | strip %}
 
 {% if list_items != empty %}
-  {% capture list_class %}
-    {% if include.recursive_only %}inner-list{% else %}list{% endif %}
+  {% capture list_class_and_roles %}
+    {% if include.recursive %}inner-list" role="menu{% else %}list{% endif %}
   {% endcapture %}
-  <ul class="{{ list_class }}">{{ list_items }}</ul>
+  <ul class="{{ list_class_and_roles | strip }}">{{ list_items }}</ul>
 {% endif %}

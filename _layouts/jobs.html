@@ -5,6 +5,6 @@ layout: default
 {% assign items = site.jobs | sort: "url" | sort: "position" %}
 {% assign base_path = "/_jobs/" %}
 
-{% include recursive-nav.html items=items base_path=base_path recursive_only=true %}
+{% include recursive-nav.html items=items base_path=base_path  %}
 
 <hr>
