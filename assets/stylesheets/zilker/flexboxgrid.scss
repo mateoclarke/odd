@@ -462,7 +462,7 @@ $lg-viewport: "only screen and (min-width: 75em)";
   .hidden-sm {
     display: none;
   }
-  
+
   .hidden-xs {
     display: inherit;
   }
@@ -865,27 +865,5 @@ $lg-viewport: "only screen and (min-width: 75em)";
 
   .hidden-lg {
     display: none;
-  }
-}
-
-
-.breakout-col-sm-8 {
-  @media #{$sm-viewport} {
-    width: 150%;
-    position: relative;
-    left: -25%;
-  }
-}
-
-.breakout-tabs {
-  @media #{$sm-viewport} {
-    width: 130%;
-    position: relative;
-    left: -15%;
-  }
-  @media #{$md-viewport} {
-    width: 150%;
-    position: relative;
-    left: -25%;
   }
 }

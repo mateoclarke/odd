@@ -41,10 +41,10 @@ collections:
 
 defaults:
 - scope:
-    type: 'pages'
-    path: 'join'
+    path: ''
   values:
-    permalink: /join/:basename/
+    lede_button_path:
+    lede_button_text: 
 # - scope:
 #     path: ''
 #   values:
