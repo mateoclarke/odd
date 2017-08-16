@@ -12,7 +12,11 @@
       </div>
     </div>
     <div class="row start-xs">
-      {% assign row_limit = include.rows | times: 4 %}
+      {% if include.rows %}
+        {% assign row_limit = include.rows | times: 4 %}
+      {% else %}
+        {% assign row_limit = nil %}
+      {% endif %}
       {% for item in include.items limit:row_limit %}
         <div class="press-mention col-md-3 col-sm-6 col-xs-12">
           <h5 class="press-title"><a href="{{ item.article_link }}">

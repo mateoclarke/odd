@@ -12,7 +12,11 @@
       </div>
     </div>
     <div class="row start-xs">
-      {% assign row_limit = include.rows | times: 3 %}
+      {% if include.rows %}
+        {% assign row_limit = include.rows | times: 3 %}
+      {% else %}
+        {% assign row_limit = nil %}
+      {% endif %}
       {% for tile in include.tiles limit:row_limit %}
         {% include tile.html tile=tile tile_type="project" %}
       {% endfor %}
