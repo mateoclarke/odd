@@ -104,3 +104,25 @@
   display: block;
   margin: 1rem auto;
 }
+.press-mention {
+  margin-bottom: 4rem;
+}
+.press-title {
+  margin-top: 0;
+  padding-top: 2rem;
+  border-top: 2px solid $color-gray-lighter;
+  a {
+    text-decoration: none;
+  }
+}
+.press-source {
+  font-size: rem(13px);
+  line-height: rem(21px);
+  font-weight: $font-medium;
+  margin-bottom: 0;
+}
+.press-date {
+  margin-top: 0;
+  font-size: rem(13px);
+  line-height: rem(21px);
+}

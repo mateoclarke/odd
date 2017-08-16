@@ -21,4 +21,9 @@ people_headline: By the People, for the People
 people_lede_markdown: 'Government is not an abstract institution or a concept. Our government is us. Meet a few of the newest Design, Technology, & Innovation Fellows who have signed on for tours of duty:'
 people_button_text: Button Text
 people_button_path: '#URL'
+
+press_mentions_headline: What People are Saying about Us
+press_mentions_lede_markdown: 'Press and interviews about our projects.'
+press_mentions_button_text: Button Text
+press_mentions_button_path: '#URL'
 ---
