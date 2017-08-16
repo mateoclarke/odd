@@ -16,4 +16,9 @@ project_tiles_headline: Featured Projects
 project_tiles_lede_markdown: These are a few of our current partner projects with City departments.
 project_tiles_button_text: Button Text
 project_tiles_button_path: '#URL'
+
+people_headline: By the People, for the People
+people_lede_markdown: 'Government is not an abstract institution or a concept. Our government is us. Meet a few of the newest Design, Technology, & Innovation Fellows who have signed on for tours of duty:'
+people_button_text: Button Text
+people_button_path: '#URL'
 ---

@@ -11,10 +11,19 @@
         </div>
       </div>
     </div>
-    <div class="row start-xs">
-      {% assign row_limit = include.rows | times: 3 %}
-      {% for tile in include.tiles limit:row_limit %}
-        {% include tile.html tile=tile tile_type="project" %}
+    <div class="row center-xs">
+      {% assign row_limit = include.rows | times: 4 %}
+      {% for person in include.people limit:row_limit %}
+        <div class="person col-md-3 col-sm-6 col-xs-12">
+          <img class="person-pic" src="{{ site.baseurl }}{{ person.photo_path }}" alt="Portrait of {{ person.name }}" />
+          <h4>{{ person.name }}</h4>
+          {% if person.discipline %}
+            <h5>{{ person.discipline }}</h5>
+          {% endif %}
+          <p>
+            {{ person.bio }}
+          </p>
+        </div>
       {% endfor %}
     </div>
     {% if include.button_text and include.button_path %}
