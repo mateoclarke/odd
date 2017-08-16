@@ -126,3 +126,45 @@
   font-size: rem(13px);
   line-height: rem(21px);
 }
+.goal-flag {
+  font-size: rem(26px);
+  color: $color-base;
+  font-weight: $font-medium;
+  border: 4px solid $color-base;
+  border-bottom-width: 0;
+  position: relative;
+  margin: 3rem auto 3rem;
+  width: 45px;
+  height: 35px;
+  line-height: 33px;
+  box-sizing: initial;
+  // @media #{$sm-viewport} { padding-bottom: 1.8rem; }
+  // @media #{$md-viewport} { padding-bottom: 3rem; }
+  // @media #{$lg-viewport} { padding-bottom: 2rem; }
+  &:before,
+  &:after {
+    content: "";
+    border-top: 4px solid $color-base;
+    width: 30px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+  &:before {
+    left: -3px;
+    transform: rotate(27deg);
+    transform-origin: left;
+  }
+  &:after {
+    right: -3px;
+    transform: rotate(-27deg);
+    transform-origin: right;
+  }
+  span {
+    border-top: 4px solid $color-gray-lighter;
+    display: block;
+  }
+  & + h3 {
+    margin-top: 0rem;
+  }
+}
