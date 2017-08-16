@@ -1,11 +1,26 @@
 {% assign title = include.tile %}
-<div class="tile tile--project col-xs-10 col-sm-6 col-md-4">
+<div class="tile tile--{{ include.tile_type }} col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-0 col-md-4">
   <a class="tile-link" href="{{ site.baseurl }}{{ tile.url }}" title="{{ tile.title }}"></a>
   <div class="tile-outline">
-    <!-- img here -->
+    <img class="tile-img" src="{{ site.baseurl }}{{ tile.image_path }}" alt="{{ tile.image_description }}"/>
     <div class="tile-text">
-      <h3 class="tile-title">{{ tile.title}}</h3>
-      <p class="tile-excerpt">{{ tile.excerpt }}</p>
+      <h3 class="tile-title">
+        {{ tile.title }}
+        {% if tile.subtitle %}
+          <span class="tile-subtitle">{{ tile.subtitle }}</span>
+        {% endif %}
+      </h3>
+
+      {% if include.tile_type == "project" %}
+        <p class="tile-excerpt">{{ tile.excerpt }}</p>
+        <p class="tile-date">{{ site.data.labels.last_revision_prefix }} {{ tile.date | date: '%B %e, %Y' }}</p>
+      {% elsif include.tile_type=="post" %}
+        <img class="tile-author-pic" src="{{ tile.author_pic_path }}" alt="Photo of {{ tile.author }}"/>
+        <div class="tile-meta">
+          <p class="tile-author">{{ tile.author }}</p>
+          <p class="tile-date">{{ site.data.labels.last_revision_prefix }} {{ tile.date | date: '%B %e, %Y' }}</p>
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>

@@ -1,8 +1,9 @@
 ---
 title: Getting Closer to Zero-Waste
+subtitle: with Austin Resource Recovery
 project_link: http://pages.austintexas.io/projects/resource-recovery/
 link_text: Learn more
-image_url: /innovation-fellows/img/work/recycling-images-board.png
+image_path: /assets/img/chihuahua.jpg
 image_description: Notes and observations from field research
 ---
 

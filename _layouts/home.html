@@ -28,8 +28,15 @@ layout: default
     </div>
   </div>
 </section>
-
-Featured Projects - Tiles<br>
+{% assign project_tiles = site.projects %}
+{% include page-section--tiles.html
+  tiles_headline=page.project_tiles_headline
+  tiles_lede=page.project_tiles_lede_markdown
+  tiles=project_tiles
+  limit=3
+  section_theme="gray"
+  button_text=page.project_tiles_button_text
+  button_path=page.project_tiles_button_path %}
 
 Staff Bios <br>
 
