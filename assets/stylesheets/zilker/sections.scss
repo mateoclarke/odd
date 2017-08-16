@@ -12,19 +12,20 @@ section {
 }
 
 .section--inverted {
-  background: $color-gray-dark;
-  color: $color-white;
+  background: $color-theme-dark-bg;
+  color: $color-theme-dark-text;
   -webkit-font-smoothing: antialiased;
-  a { color: inherit; }
+  h1, h2, h3, h4, h5, a { color: inherit; }
+
 }
 .section--gray {
-  background: $color-background;
+  background: $color-theme-dark-hover;
 }
 .section--last {
   margin-bottom: 0;
 }
 html {
-  background: $color-gray-dark;
+  background: $color-theme-dark-bg;
   color: $color-white;
   body {
     background: $color-white;

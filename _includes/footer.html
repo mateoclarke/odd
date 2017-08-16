@@ -1,15 +1,36 @@
-<footer>
-
-
-City Seal <br>
-Join CTA <br>
-
-
-Footer nav<br>
-
-
-Privacy Policy | Credits | Social <br>
-
+<footer class="site-footer section--inverted main">
+  <div class="container-fluid">
+    <div class="row center-xs">
+      <div class="footer-logo">
+        <img src="{{ site.baseurl }}/assets/img/coa-austin-seal-white.svg" alt="City of Austin Seal" height="100" width="100"/>
+      </div>
+    </div>
+    <div class="row center-xs">
+      <div class="footer-cta">
+        <h3>{{ site.data.labels.footer_headline }}</h3>
+        <p>{{ site.data.labels.footer_lede }}</p>
+        <div class="row center-xs">
+          <a href="{{ site.data.labels.footer_button_path }}" class="usa-button">{{ site.data.labels.footer_button_text }}</a>
+        </div>
+      </div>
+    </div>
+    <div class="row center-xs">
+      <div class="footer-menu">
+        Footer nav goes here
+      </div>
+    </div>
+  </div>
+</footer>
+<footer class="mini-footer section--inverted main">
+  <div class="container-fluid">
+    <div class="row center-xs end-sm">
+      <div class="mini-footer--left start-sm center-xs col-sm-2"><a href="#TODO">Privacy Policy (add!)</a></div>
+      <div class="mini-footer--center footer-credits center-xs col-sm-8">
+        <span class="footer-credits">{{ site.data.labels.footer_credits }}</span>
+      </div>
+      <div class="mini-footer--right end-sm center-xs col-sm-2">Social Icons Here</div>
+    </div>
+  </div>
 </footer>
 
 

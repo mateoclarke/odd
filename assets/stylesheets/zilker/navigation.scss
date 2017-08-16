@@ -193,38 +193,88 @@ $drawer-width: 28rem;
 }
 
 .site-footer {
-  .container-fluid {
-    padding: 0 1em;
-  }
+  padding-top: 2rem;
   a {
     text-decoration: none;
   }
   .footer-logo {
-    font-size: 1.1rem;
-    font-family: $font-sans;
-    p {
-      margin: 0;
-      a {
-        text-decoration: underline;
-      }
-    }
     img {
-      float: left;
-      margin-right: 1.5rem;
-      width: 6rem;
-      height: 6rem;
-      margin-bottom: 4rem;
+      width: 8rem;
+      height: 8rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
     }
     @media #{$md-viewport} {
       img {
         width: 12rem;
-        height: auto;
-        float: none;
-        margin-right: 0;
+        height: 12rem;
       }
     }
   }
-  .footer-link-list {
+  .footer-cta h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    & + p {
+      margin-top: 0;
+    }
+  }
+  .footer-menu {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+}
+
+
+.mini-footer {
+  font-size: rem(13px);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  [class^="mini-footer--"] {
+    align-self: start;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  .mini-footer--left {
+    order: 3;
+    @media #{$sm-viewport} {
+      order: 1;
+    }
+  }
+  .mini-footer--center {
+    order: 2;
+    @media #{$sm-viewport} {
+      order: 2;
+    }
+  }
+  .mini-footer--right {
+    order: 1;
+    @media #{$sm-viewport} {
+      order: 3;
+    }
+  }
+  a {
+    color: $color-theme-dark-hover;
+  }
+}
+
+.footer-credits {
+  font-family: $font-sans;
+  font-size: rem(13px);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .06rem;
+  color: $color-theme-dark-hover;
+}
+
+
+.site-mobile-menu {
+  @media #{$sm-viewport} {
+    display: none;
+  }
+  .container-fluid {
+    padding: 0 1em;
+  }
+  .mobile-menu-link-list {
     ul {
       margin: 0;
       padding: 0;
@@ -252,7 +302,7 @@ $drawer-width: 28rem;
       }
     }
   }
-  .footer-link-list-view-all {
+  .mobile-menu-link-list-view-all {
     line-height: rem(14px);
     a {
       color: $color-white;
@@ -264,21 +314,20 @@ $drawer-width: 28rem;
       -webkit-font-smoothing: subpixel-antialiased;
     }
   }
-  .footer-border-top {
+  .mobile-menu-border-top {
     border-top: 1px solid $color-white;
     padding-top: 2rem;
     margin-top: 1rem;
-    &.footer-logo {
+    &.mobile-menu-logo {
       padding-top: 3rem;
     }
   }
   @media #{$sm-viewport} {
-    .footer-border-top {
+    .mobile-menu-border-top {
       border-top-width: 0;
       margin-top: 0;
     }
   }
-  /* footer doubles as mobile menu */
   margin-top: 0;
   padding-top: 2rem;
   padding-bottom: 4rem;
@@ -289,13 +338,15 @@ $drawer-width: 28rem;
   z-index: 1000;
   height: calc(100% - (10rem + #{$pre-header-height}));
 }
+
+// items that should function like the main element when mobile menu opens/closes
 .main {
   position: relative;
   left: 0;
 }
 
 // make sure they have the same transitons
-.main, .site-footer {
+.main, .site-mobile-menu {
   transition: left .25s, top .25s;
 
   // reset to normal for desktop
@@ -342,51 +393,19 @@ html.drawer-open--menu {
   .main {
     left: $drawer-width;
   }
-  .site-footer {
+  .site-mobile-menu {
     left: 0;
   }
 }
 
 // easiest if everything is the same height
-html.drawer-open--translate  .header--translate,
-html.drawer-open--search  .header--search {
+html.drawer-open--translate  .header--translate {
   height: $pre-header-height;
 }
 // two rows show
-html.drawer-open--translate,
-html.drawer-open--search {
-  .site-footer {
+html.drawer-open--translate {
+  .site-mobile-menu {
     top: 10 + ($pre-header-height * 2);
     height: calc(100% - (10rem + (#{$pre-header-height} * 2)));
-  }
-}
-// three rows show
-html.drawer-open--translate.drawer-open--search {
-  .site-footer {
-    top: 10 + ($pre-header-height * 3);
-    height: calc(100% - (10rem + (#{$pre-header-height} * 3)));
-  }
-}
-
-
-.mini-footer .footer-credits{
-  font-family: $font-sans;
-  font-size: 1.1rem;
-  font-weight: 400;
-  padding: 1.5rem 0;
-  .footer-credits-prefix {
-    font-weight: 500;
-    margin-right: .5rem;
-    -webkit-font-smoothing: subpixel-antialiased;
-
-    &:before {
-      content: "";
-      background: $color-secondary-light;
-      width: 2px;
-      height: 10px;
-      display: inline-block;
-      margin-right: 10px;
-      transform: rotate(39deg);
-    }
   }
 }
