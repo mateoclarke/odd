@@ -1,4 +1,7 @@
-var parseMediumJSON = function() {
+var parseMediumJSON = function(post_rows) {
+  // max 10 posts
+  post_rows = post_rows || 10;
+
   // get the template
   var template_markup = $('#post-template').html();
 
@@ -29,18 +32,19 @@ var parseMediumJSON = function() {
 
       };
 
-      // for each post
+      // for each post, until we hit max
       // fill out the variables
-      var thisInstance = $(template_markup);
-      thisInstance.find('.tile-title').text(cleaned_post.post_title);
-      thisInstance.find('.tile-link').attr('href', cleaned_post.post_url);
-      thisInstance.find('.tile-img').attr('src', cleaned_post.post_image_url).attr('alt', cleaned_post.post_title);
-      thisInstance.find('.tile-author-pic').attr('src', cleaned_post.post_author_pic).attr('alt', cleaned_post.post_author_name);
-      thisInstance.find('.tile-author').text(cleaned_post.post_author_name);
-      thisInstance.find('.tile-date').text(cleaned_post.post_date);
-      $('#post-container').append(thisInstance);
-      // and append to the container
-
+      if (index < post_rows ) {
+        var thisInstance = $(template_markup);
+          thisInstance.find('.tile-title').text(cleaned_post.post_title);
+          thisInstance.find('.tile-link').attr('href', cleaned_post.post_url);
+          thisInstance.find('.tile-img').css('background-image', 'url(' + cleaned_post.post_image_url +')');
+          thisInstance.find('.tile-author-pic').attr('src', cleaned_post.post_author_pic).attr('alt', cleaned_post.post_author_name);
+          thisInstance.find('.tile-author').text(cleaned_post.post_author_name);
+          thisInstance.find('.tile-date').text(cleaned_post.post_date);
+        $('#post-container').append(thisInstance);
+        // and append to the container
+      }
 
       return cleaned_post;
     });
