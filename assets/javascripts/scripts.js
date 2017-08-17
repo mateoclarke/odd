@@ -1,3 +1,36 @@
+var parseMediumJSON = function() {
+  $.getJSON('https://8k431k2y7h.execute-api.us-west-2.amazonaws.com/Production/medium', function(data) {
+    var author_list = data.body.payload.references.User;
+    var all_posts = data.body.payload.posts;
+    var posts_to_output = $.map(all_posts, function(post, index){
+      var author = author_list[post.creatorId];
+      var cleaned_post = {
+
+        post_title:       post.title,
+
+                          // get full URL, prepend Medium collection
+        post_url:         "https://medium.com/civiqueso/" + post.uniqueSlug,
+
+                          // get full Image URL, append Medium CDN
+        post_image_url:   "https://cdn-images-1.medium.com/max/1000/" + post.virtuals.previewImage.imageId,
+
+                          // get author name by ID, from user_list
+        post_author_name: author.name,
+
+                          // get author pic by ID
+        post_author_pic:  "https://cdn-images-1.medium.com/fit/c/60/60/" + author.imageId,
+
+                          // convert date to human-readable string
+        post_date:        new Date(post.latestPublishedAt).format('F j, Y')
+
+      };
+      return cleaned_post;
+    });
+    console.log(posts_to_output);
+
+  });
+}
+
 var initMobileMenus = function() {
 
   var html = $("html");
@@ -52,5 +85,5 @@ var initLinkAttributes = function() {
 $(document).ready(function(){
   initMobileMenus();
   initLinkAttributes();
-
+  parseMediumJSON();
 });
