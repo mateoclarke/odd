@@ -1,10 +1,26 @@
 ---
 layout: full-page
+
+medium_post_template:
+  title: "{post.title}"
+  url: "{post.url}"
+  image_path: "{post.image_path}"
+  image_description: "{post.title}"
+  date: "{post.date}"
+  author: "{post.author_name}"
+  author_pic_path: "{post.author_pic}"
 ---
 <section class="page-section center-xs">
   <div class="container container-fluid">
-    <div class="row">
-      Medium posts - get these dynamically
+    <div class="row start-xs" id="post-container">
+      <script type="text/template" id="post-template">
+        {% include tile.html tile=page.medium_post_template tile_type="post" tile_external = true %}
+      </script>
+      <script>
+      $(document).ready(function(){
+        parseMediumJSON();
+      });
+      </script>
     </div>
   </div>
 </section>

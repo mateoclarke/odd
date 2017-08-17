@@ -1,4 +1,8 @@
 var parseMediumJSON = function() {
+  // get the template
+  var template_markup = $('#post-template').html();
+
+  // get the data
   $.getJSON('https://8k431k2y7h.execute-api.us-west-2.amazonaws.com/Production/medium', function(data) {
     var author_list = data.body.payload.references.User;
     var all_posts = data.body.payload.posts;
@@ -24,9 +28,22 @@ var parseMediumJSON = function() {
         post_date:        new Date(post.latestPublishedAt).format('F j, Y')
 
       };
+
+      // for each post
+      // fill out the variables
+      var thisInstance = $(template_markup);
+      thisInstance.find('.tile-title').text(cleaned_post.post_title);
+      thisInstance.find('.tile-link').attr('href', cleaned_post.post_url);
+      thisInstance.find('.tile-img').attr('src', cleaned_post.post_image_url).attr('alt', cleaned_post.post_title);
+      thisInstance.find('.tile-author-pic').attr('src', cleaned_post.post_author_pic).attr('alt', cleaned_post.post_author_name);
+      thisInstance.find('.tile-author').text(cleaned_post.post_author_name);
+      thisInstance.find('.tile-date').text(cleaned_post.post_date);
+      $('#post-container').append(thisInstance);
+      // and append to the container
+
+
       return cleaned_post;
     });
-    console.log(posts_to_output);
 
   });
 }
@@ -85,5 +102,4 @@ var initLinkAttributes = function() {
 $(document).ready(function(){
   initMobileMenus();
   initLinkAttributes();
-  parseMediumJSON();
 });
