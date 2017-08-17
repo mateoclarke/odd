@@ -2,7 +2,7 @@
 <div class="tile tile--{{ include.tile_type }} col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-0 col-md-4">
   <a class="tile-link" {% if include.tile_external %}target="_blank"{% endif %} href="{% unless include.tile_external %}{{ site.baseurl }}{% endunless %}{{ tile.url }}" title="{{ tile.title }}"></a>
   <div class="tile-outline">
-    <img class="tile-img" src="{% unless include.tile_external %}{{ site.baseurl }}{% endunless %}{{ tile.image_path }}" alt="{{ tile.image_description }}"/>
+    <div class="tile-img" style="background-image: url('{% unless include.tile_external %}{{ site.baseurl }}{% endunless %}{{ tile.image_path }}')"></div>
     <div class="tile-text">
       <h3 class="tile-title">
         {{ tile.title }}

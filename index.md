@@ -22,6 +22,11 @@ people_lede_markdown: 'Government is not an abstract institution or a concept. O
 people_button_text: Button Text
 people_button_path: '#URL'
 
+medium_headline: Follow us on Medium
+medium_lede_markdown: 'Our Medium publication is Civiqueso—stories of design, technology, and innovation in the civic melting pot of Austin, Texas.'
+medium_button_text: See recent posts
+medium_button_path: '#URL'
+
 press_mentions_headline: What People are Saying about Us
 press_mentions_lede_markdown: 'Press and interviews about our projects.'
 press_mentions_button_text: Button Text
