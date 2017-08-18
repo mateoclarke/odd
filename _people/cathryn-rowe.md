@@ -1,9 +1,9 @@
 ---
 name: Cathryn Rowe
 discipline: Interaction & Visual Designer
-start_date: 2017-09-30
+start_date: 2016-10-31
 bio: |
-  I've moved between the public and private sectors throughout my career, designing user experiences for non-profits, Fortune 500 companies, and local start-ups. My expertise is in improving complex, large-scale systems and software. I joined the Fellows for the opportunity to collaborate with City staff to create more intuitive, accessible experiences that help to serve and inform the public.
+  My expertise is in improving complex, large-scale systems, and working as a Fellow in the City is a unique opportunity to put that to good use. I want to help create more intuitive, accessible experiences that serve and inform the public.
 photo_path: /assets/img/staff/cathryn-rowe.jpg
 role: fellow
 ---

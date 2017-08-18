@@ -1,9 +1,9 @@
 ---
 name: Julia Byron
 discipline: User Research
-start_date: 2017-09-30
+start_date: 2016-08-15
 bio: |
-  I want to work on tough challenges in society. As the body responsible for all of society’s well being, the government has the greatest influence on improving people’s lives, but also in creating headaches and barriers. I want to improve systems to help our community get the most out of government and help the government better serve the people.
+  The fellowship gives me an opportunity to work with all corners of society, rather than the few who can afford consumer products. I want to help Austin’s residents get the most out of our government and help the government better serve the community.
 photo_path: /assets/img/staff/julia-byron.jpg
 role: fellow
 
