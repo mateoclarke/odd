@@ -11,8 +11,8 @@ layout: default
       {% include recursive-nav.html items=items base_path=base_path  %}
 
     </div>
-    <div class="page start-xs col-sm-7 col-sm-offset-1 col-xs-12">
-      <section class="page-header">
+    <div class="col-sm-7 col-sm-offset-1 col-xs-12">
+      <section class="page-header start-xs">
         <div class="row">
           <div class="col-xs"><h1>{{ page.title }}</h1></div>
         </div>
@@ -29,7 +29,7 @@ layout: default
         </div>
         {% endif %}
       </section>
-      <section class="page">
+      <section class="page-section start-xs">
       {{ content }}
       </section>
     </div>

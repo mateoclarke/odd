@@ -6,16 +6,16 @@ list_order: 6
 lede_markdown: We’re looking for a senior content strategist to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design.
 
 ---
-
-We’re looking for a senior content strategist to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design. Our teams are working to improve a wide range of city services, including researching and redesigning our [permitting processes](http://www.austintexas.gov/department/development-services), prototyping ways to change behaviors around [recycling and composting](http://www.austintexas.gov/department/austin-resource-recovery), building the next generation of [ATXFloods](https://www.atxfloods.com), , improving services for people experiencing homelessness, and creating city-wide standards for interface design, user research, and content strategy.		
+## Overview
+Our teams are working to improve a wide range of city services, including researching and redesigning our [permitting processes](http://www.austintexas.gov/department/development-services), prototyping ways to change behaviors around [recycling and composting](http://www.austintexas.gov/department/austin-resource-recovery), building the next generation of [ATXFloods](https://www.atxfloods.com), , improving services for people experiencing homelessness, and creating city-wide standards for interface design, user research, and content strategy.		
 
 You’ll also serve as an expert and educator in your discipline, establishing new practices that can work across departments and providing guidance and training for other fellows and city staff.		
 
-#### Salary		
+## Salary		
 
 $75,000-$86,000, commensurate with experience		
 
-#### What you’ll do:		
+## What you’ll do:		
 
 *   Serve on multidisciplinary teams to concept, prototype, and implement content solutions for city services		
 *   Identify and model content types for websites, applications, printed resources, and in-person transactions		
@@ -40,7 +40,7 @@ $75,000-$86,000, commensurate with experience
 *   Knowledge of web standards and best practices related to accessibility, usability, and writing for the web		
 *   A passion for public service and a commitment to doing the hard work that’s necessary to improve our city services		
 
-#### Minimum qualifications		
+## Minimum qualifications		
 
 *   Two years of relevant work experience		
 *   Graduation from an accredited four-year college or university with major course work in a related field. An additional 4 years of experience can substitute this education requirement.

@@ -4,19 +4,16 @@ is_fellow: true
 lever_link: https://jobs.lever.co/austintexas/444a8926-e628-44d7-a240-49c8df16dbf9/apply
 list_order: 10
 lede_markdown: We’re looking for skilled manager and mentor to lead engineering practices for City of Austin’s Design, Technology, and Innovation Fellows program.
-
-
 ---
 
-We’re looking for skilled manager and mentor to lead engineering practices for City of Austin’s Design, Technology, and Innovation Fellows program.
-
+## Overview
 As a fellow, you’ll serve with teams who are working to improve a wide range of city services, including researching and redesigning our [permitting processes](http://www.austintexas.gov/department/development-services), prototyping ways to change behaviors around [recycling and composting](http://www.austintexas.gov/department/austin-resource-recovery), building the next generation of [ATXFloods](https://www.atxfloods.com), improving services for people experiencing homelessness, and creating city-wide standards for interface design, user research, and content strategy.
 
-#### Salary
+## Salary
 
 $86,000-$109,324, commensurate with experience
 
-#### What you’ll do:
+## What you’ll do:
 
 *   Serve as a manager and mentor for Design, Technology, and Innovation Fellows serving in front-end development, back-end development, and solutions architecture roles
 *   Improve software engineering practices across the city by establishing training programs, advising on strategic initiatives, and leading communities of practice
@@ -29,7 +26,7 @@ $86,000-$109,324, commensurate with experience
 *   Write blog posts that share what we make and how we make it
 *   Commit to making what we build fully accessible to the people we serve
 
-#### What we're looking for
+## What we're looking for
 
 *   6+ years of professional experience developing large-scale applications and services, including at least 2 years of experience directly managing and mentoring developers
 *   Knowledge of lean and agile development methodologies, including expertise in teaching when and how to use specific specific approaches and deliverables

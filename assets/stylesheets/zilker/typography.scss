@@ -25,9 +25,11 @@ h2 {
     height: 8px;
     display: block;
     content: "";
-    margin: 8px auto;
   }
 }
+// this won't work all the time, but works for our usecase right now
+.page-section.start-xs h2:after { margin: 12px 0; }
+.page-section.center-xs h2:after { margin: 8px auto; }
 
 h3 {
   color: $color-gray;

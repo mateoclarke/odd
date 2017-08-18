@@ -3,22 +3,22 @@ title: Conversation Designer / Facilitator
 is_fellow: true
 lever_link: https://jobs.lever.co/austintexas/832e798e-2b3c-4493-a895-276753feafd7/apply
 list_order: 5
-lede_markdown: We’re looking for mid-level and senior facilitators to serve on multidisciplinary project teams with designers and career civil servants, actively demonstrating the value of facilitation in support of an iterative design process. 
+lede_markdown: We’re looking for mid-level and senior facilitators to serve on multidisciplinary project teams with designers and career civil servants, actively demonstrating the value of facilitation in support of an iterative design process.
 
 ---
 
-
-We’re looking for mid-level and senior facilitators to serve on multidisciplinary project teams with designers and career civil servants, actively demonstrating the value of facilitation in support of an iterative design process. Our teams are working to improve a wide range of city services, including researching and redesigning our [permitting processes](http://www.austintexas.gov/department/development-services), prototyping ways to change behaviors around [recycling and composting](http://www.austintexas.gov/department/austin-resource-recovery), building the next generation of [ATXFloods](https://www.atxfloods.com), , improving services for people experiencing homelessness, and creating city-wide standards for interface design, user research, and content strategy.
+## Overview
+Our teams are working to improve a wide range of city services, including researching and redesigning our [permitting processes](http://www.austintexas.gov/department/development-services), prototyping ways to change behaviors around [recycling and composting](http://www.austintexas.gov/department/austin-resource-recovery), building the next generation of [ATXFloods](https://www.atxfloods.com), , improving services for people experiencing homelessness, and creating city-wide standards for interface design, user research, and content strategy.
 
 Your passion is bringing people together and running a process to help them tackle complex challenges. You’ll also serve as an expert and educator in your discipline, establishing new practices that can work across departments and providing guidance and training for other fellows and city staff.
 
 This position is currently available for a four-month term, with the possibility of extending to a year based on the emerging needs of our projects and initiatives.
 
-#### Salary
+## Salary
 
 $75,000-$86,000, commensurate with experience
 
-#### What you’ll do:
+## What you’ll do:
 
 *   Plan and conduct stakeholder research to develop robust “lay of the land” insights into organizational systems.
 *   Help diverse groups identify and pursue opportunities to strengthen their collaborative connections.
@@ -32,7 +32,7 @@ $75,000-$86,000, commensurate with experience
 *   Commit to making what we design and facilitate fully accessible to the people we serve.
 *   Serve as a subject matter expert in the hiring process for additional Design, Technology, and Innovation Fellows.
 
-#### What we’re looking for
+## What we’re looking for
 
 *   3+ years of professional experience designing and conducting facilitated collaboration processes with demonstrated outcomes/deliverables and knowledge of when and how to use specific facilitation approaches
 *   Mediation training and experience highly preferred
@@ -42,7 +42,7 @@ $75,000-$86,000, commensurate with experience
 *   Successful track record working with cross-functional teams and within a range of industries, sectors, and organizational cultures
 *   A passion for public service and a commitment to doing the hard work that’s necessary to improve our city services
 
-#### Minimum qualifications
+## Minimum qualifications
 
 *   Two years of relevant work experience
 *   Graduation from an accredited four-year college or university with major course work in a related field. An additional 4 years of experience can substitute this education requirement.

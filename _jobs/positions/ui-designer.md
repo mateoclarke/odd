@@ -7,16 +7,16 @@ lede_markdown: We’re looking for a senior UI designer to serve on multidiscipl
 
 
 ---
-
-We’re looking for a senior UI designer to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design. Our teams are working to improve a wide range of city services, including researching and redesigning our [permitting processes](http://www.austintexas.gov/department/development-services), prototyping ways to change behaviors around [recycling and composting](http://www.austintexas.gov/department/austin-resource-recovery), building the next generation of [ATXFloods](https://www.atxfloods.com/), and creating city-wide standards for visual design, web development, and user research.
+## Overview
+Our teams are working to improve a wide range of city services, including researching and redesigning our [permitting processes](http://www.austintexas.gov/department/development-services), prototyping ways to change behaviors around [recycling and composting](http://www.austintexas.gov/department/austin-resource-recovery), building the next generation of [ATXFloods](https://www.atxfloods.com/), and creating city-wide standards for visual design, web development, and user research.
 
 You’ll also serve as an expert and educator in your discipline, establishing new practices that can work across departments and providing guidance and training for other fellows and city staff.
 
-#### Salary
+## Salary
 
 $75,000-$86,000, commensurate with experience
 
-#### What you’ll do:
+## What you’ll do:
 
 *   Lead projects from a visual design perspective, defining look & feel, designing re-usable components, and ensuring staff members will be able to execute the design on hand-off.
 *   Create artifacts to communicate with team members, stakeholders, and the public, including prototypes, comps/mock-ups, sticker sheets, and functional specifications.
@@ -27,7 +27,7 @@ $75,000-$86,000, commensurate with experience
 *   Share what we make and how we make it through meetups, blog posts, and other functions.
 *   Serve as a subject matter expert in the hiring process for additional Design, Technology, and Innovation Fellows.
 
-#### What we’re looking for
+## What we’re looking for
 
 *   4+ years of professional experience designing large-scale interfaces, experiences, and applications.
 *   Knowledge of designing for CMS (Content Management Systems).
@@ -36,7 +36,7 @@ $75,000-$86,000, commensurate with experience
 *   Knowledge of web standards and best practices related to accessibility, usability, and writing for the web.
 *   A passion for public service and a commitment to doing the hard work that’s necessary to improve our city services.
 
-#### Minimum qualifications
+## Minimum qualifications
 
 *   4 years of relevant work experience
 *   Graduation from an accredited four-year college or university with major course work in a related field. An additional 4 years of experience can substitute this education requirement.

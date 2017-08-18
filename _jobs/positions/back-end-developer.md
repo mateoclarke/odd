@@ -5,16 +5,16 @@ lever_link: https://jobs.lever.co/austintexas/037347fd-48b4-4c98-89c2-7477353945
 list_order: 9
 lede_markdown: We’re looking for a senior back-end developer to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design.
 ---
-
-We’re looking for a senior back-end developer to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design. Our teams are working to improve a wide range of city services, including researching and redesigning our [permitting processes](http://www.austintexas.gov/department/development-services), prototyping ways to change behaviors around [recycling and composting](http://www.austintexas.gov/department/austin-resource-recovery), building the next generation of [ATXFloods](https://www.atxfloods.com), improving the digital presence of our [Convention Center](https://github.com/cityofaustin/austinconventioncenter.com), and creating city-wide standards for interface design, web infrastructure, and automated testing.
+## Overview
+Our teams are working to improve a wide range of city services, including researching and redesigning our [permitting processes](http://www.austintexas.gov/department/development-services), prototyping ways to change behaviors around [recycling and composting](http://www.austintexas.gov/department/austin-resource-recovery), building the next generation of [ATXFloods](https://www.atxfloods.com), improving the digital presence of our [Convention Center](https://github.com/cityofaustin/austinconventioncenter.com), and creating city-wide standards for interface design, web infrastructure, and automated testing.
 
 You’ll also serve as an expert and educator in your discipline, establishing new practices that can work across departments and providing guidance and training for other fellows and city staff.
 
-#### Salary
+## Salary
 
 $75,000-$86,000, commensurate with experience
 
-#### What you’ll do:
+## What you’ll do:
 
 *   Work with other developers on the Innovation Fellows team to establish new standards and practices for web development based on modern languages, frameworks, and best practices
 *   Serve as a core contributor on multi-disciplinary project teams to improve city services
@@ -26,7 +26,7 @@ $75,000-$86,000, commensurate with experience
 *   Write blog posts that share what we make and how we make it
 *   Serve as a subject matter expert in the hiring process for additional Design, Technology, and Innovation Fellows
 
-#### What we're looking for
+## What we're looking for
 
 *   3+ years of professional experience developing large-scale applications and services
 *   Detailed understanding of and experience building server-side web applications and services using modern languages, frameworks, and open source software
@@ -35,7 +35,7 @@ $75,000-$86,000, commensurate with experience
 *   Ability to quickly become familiar with emerging technologies and practices
 *   A passion for public service and a commitment to doing the hard work that’s necessary to improve our city services
 
-#### Minimum qualifications
+## Minimum qualifications
 
 *   Two years of relevant work experience
 *   Graduation from an accredited four-year college or university with major course work in a related field. An additional 4 years of experience can substitute this education requirement.
