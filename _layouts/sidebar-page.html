@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="container container-fluid">
+  <div class="row">
+    <div class="sidebar start-xs col-sm-3 col-xs-12">
+
+      {% assign new_collection = site.collections | where: "title", page.nav_from_collection | first %}
+      {% assign items = new_collection.docs | sort: "url" | sort: "position" %}
+      {% assign base_path = page.nav_from_collection | downcase | prepend: "/_" | append: "/"  %}
+      {% include recursive-nav.html items=items base_path=base_path  %}
+      
+    </div>
+    <div class="page start-xs col-sm-8 col-xs-12">
+      {% include page-header.html sidebar=true %}
+    </div>
+    {{ content }}
+  </div>
+</div>

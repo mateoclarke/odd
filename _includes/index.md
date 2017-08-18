@@ -1,3 +1,0 @@
----
-_layout: index
----
