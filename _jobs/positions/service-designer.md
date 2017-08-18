@@ -1,8 +1,9 @@
 ---
-title: Service Designer		
-is_fellow: true		
-lever_link: https://jobs.lever.co/austintexas/7a6e9720-8cb4-4439-a1cf-0d4dbf497189/apply		
-list_order: 2		
+title: Service Designer
+is_fellow: true
+lever_link: https://jobs.lever.co/austintexas/7a6e9720-8cb4-4439-a1cf-0d4dbf497189/apply
+list_order: 2
+lede_markdown: We’re looking for an experienced service designer to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design.
 ---
 
 We’re looking for an experienced service designer to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design. Our teams are working to improve a wide range of city services, including researching and redesigning our [permitting processes](http://www.austintexas.gov/department/development-services), prototyping ways to change behaviors around [recycling and composting](http://www.austintexas.gov/department/austin-resource-recovery), building the next generation of [ATXFloods](https://www.atxfloods.com/), , improving services for people experiencing homelessness, and creating city-wide standards for service design, web development, and user research.		

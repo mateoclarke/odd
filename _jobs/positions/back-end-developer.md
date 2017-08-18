@@ -3,7 +3,7 @@ title: Back-End Web Developer
 is_fellow: true
 lever_link: https://jobs.lever.co/austintexas/037347fd-48b4-4c98-89c2-7477353945ac/apply
 list_order: 9
-
+lede_markdown: We’re looking for a senior back-end developer to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design.
 ---
 
 We’re looking for a senior back-end developer to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design. Our teams are working to improve a wide range of city services, including researching and redesigning our [permitting processes](http://www.austintexas.gov/department/development-services), prototyping ways to change behaviors around [recycling and composting](http://www.austintexas.gov/department/austin-resource-recovery), building the next generation of [ATXFloods](https://www.atxfloods.com), improving the digital presence of our [Convention Center](https://github.com/cityofaustin/austinconventioncenter.com), and creating city-wide standards for interface design, web infrastructure, and automated testing.

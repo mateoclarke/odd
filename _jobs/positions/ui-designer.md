@@ -3,6 +3,8 @@ title: Senior User Interface Designer
 is_fellow: true
 lever_link: https://jobs.lever.co/austintexas/b269495d-8f9e-450f-bd93-975e4badda39/apply
 list_order: 4
+lede_markdown: We’re looking for a senior UI designer to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design.
+
 
 ---
 

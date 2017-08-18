@@ -3,6 +3,7 @@ title: User Experience Designer
 is_fellow: true
 lever_link: https://jobs.lever.co/austintexas/afad8fdb-8f52-4cf9-8f14-a396ee890b20/apply
 list_order: 3
+lede_markdown: We’re looking for a senior user experience designer to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design.
 
 ---
 We’re looking for a senior user experience designer to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design. Our teams are working to improve a wide range of city services, including researching and redesigning our [permitting processes](http://www.austintexas.gov/department/development-services), prototyping ways to change behaviors around [recycling and composting](http://www.austintexas.gov/department/austin-resource-recovery), building the next generation of [ATXFloods](https://www.atxfloods.com), , improving services for people experiencing homelessness, and creating city-wide standards for service design, web development, and user research.
