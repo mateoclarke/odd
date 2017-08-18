@@ -2,7 +2,7 @@
 title: Service Designer
 is_fellow: true
 lever_link: https://jobs.lever.co/austintexas/7a6e9720-8cb4-4439-a1cf-0d4dbf497189/apply
-list_order: 2
+position: 2
 lede_markdown: We’re looking for an experienced service designer to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design.
 ---
 

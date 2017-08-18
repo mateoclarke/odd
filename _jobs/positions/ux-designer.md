@@ -2,7 +2,7 @@
 title: User Experience Designer
 is_fellow: true
 lever_link: https://jobs.lever.co/austintexas/afad8fdb-8f52-4cf9-8f14-a396ee890b20/apply
-list_order: 3
+position: 3
 lede_markdown: We’re looking for a senior user experience designer to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design.
 
 ---

@@ -2,7 +2,7 @@
 title: Front-End Web Developer
 is_fellow: true
 lever_link: https://jobs.lever.co/austintexas/eb9dc901-e786-4241-b41c-ed7d99f00100/apply
-list_order: 8
+position: 8
 lede_markdown: We’re looking for a senior front-end developer to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design.
 
 ---

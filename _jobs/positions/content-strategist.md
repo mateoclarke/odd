@@ -2,7 +2,7 @@
 title: Content Strategist		
 is_fellow: true
 lever_link: https://jobs.lever.co/austintexas/a57be492-9bf3-41f3-a329-2751fea9256b/apply
-list_order: 6
+position: 6
 lede_markdown: We’re looking for a senior content strategist to serve on multidisciplinary project teams with career civil servants, actively demonstrating the value of iterative development and user-centered design.
 
 ---
