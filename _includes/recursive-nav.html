@@ -10,7 +10,7 @@
         {% unless item.layout == "redirect" %}
           <a href="{{ site.baseurl }}{{ item.url }}"{% if page.url contains item.url %} title="{{ item.title }}" class="active"{% endif %} role="menuitem">{{ item.title }}</a>
         {% else %}
-          <span class="list-heading">{{ item.title }}</span>
+          <h6 class="list-heading">{{ item.title }}</h6>
           {% endunless %}
         {% assign inner_base_path = item.path | remove: ".md" | prepend: "/" | append: "/" %}
         {% include recursive-nav.html items=include.items base_path=inner_base_path recursive=true %}

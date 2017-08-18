@@ -94,7 +94,6 @@ $drawer-width: 28rem;
   }
 }
 .site-header {
-  box-shadow: $vertical-shadow;
   background: $color-theme-dark-bg;
   color: $color-theme-dark-text;
   -webkit-font-smoothing: antialiased;
@@ -407,5 +406,41 @@ html.drawer-open--translate {
   .site-mobile-menu {
     top: 10 + ($pre-header-height * 2);
     height: calc(100% - (10rem + (#{$pre-header-height} * 2)));
+  }
+}
+
+.sidebar {
+  box-shadow: $horizontal-shadow;
+  padding-top: 6rem;
+  font-size: rem(15px);
+  ul {
+    padding-left: 0;
+    margin-bottom: 6rem;
+  }
+  li {
+    list-style-type: none;
+    margin-bottom: 1.5rem;
+  }
+  a {
+    text-decoration: none;
+    &.active {
+      color: $color-gray;
+      pointer-events: none;
+      position: relative;
+      font-weight: $font-medium;
+      &:before {
+        width: 4px;
+        height: 1em;
+        position: absolute;
+        left: -15px;
+        top: 3px;
+        content: "";
+        display: block;
+        background: $color-theme-dark-accent;
+      }
+    }
+  }
+  .list-heading {
+    margin-bottom: 1.85rem;
   }
 }
