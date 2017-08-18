@@ -459,13 +459,14 @@ $lg-viewport: "only screen and (min-width: 75em)";
     order: 1;
   }
 
+  .hidden-xs {
+    display: inherit;
+  }
+
   .hidden-sm {
     display: none;
   }
 
-  .hidden-xs {
-    display: inherit;
-  }
 }
 
 @media #{$md-viewport} {
@@ -664,6 +665,9 @@ $lg-viewport: "only screen and (min-width: 75em)";
     order: 1;
   }
 
+  .hidden-sm {
+    display: inherit;
+  }
   .hidden-md {
     display: none;
   }
@@ -861,6 +865,10 @@ $lg-viewport: "only screen and (min-width: 75em)";
 
   .last-lg {
     order: 1;
+  }
+
+  .hidden-md {
+    display: inherit;
   }
 
   .hidden-lg {
