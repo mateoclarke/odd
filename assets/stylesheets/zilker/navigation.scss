@@ -21,7 +21,7 @@ $drawer-width: 28rem;
   .container-fluid {
     padding-right: .5em;
     padding-left: .5em;
-    @media #{$sm-viewport} {
+    @media #{$md-viewport} {
       padding-right: 2em;
       padding-left: 2em;
     }
@@ -299,65 +299,44 @@ $drawer-width: 28rem;
   @media #{$md-viewport} {
     display: none;
   }
+  nav {
+    ul {
+      margin: 0;
+      padding: 0 1.5rem;
+      font-size: rem(17px);
+      li {
+        text-align: left;
+        margin: 1rem 0;
+        padding: .5rem 0;
+        list-style-type: none;
+        display: block;
+        & > a {
+          display: block;
+          font-weight: $font-medium;
+          position: relative;
+          text-decoration: none;
+          &.active {
+            color: $color-gray;
+            &:before {
+              width: 4px;
+              height: 1em;
+              position: absolute;
+              left: -15px;
+              top: 3px;
+              content: "";
+              display: block;
+              background: $color-theme-dark-accent;
+            }
+          }
+        }
+      }
+    }
+  }
   .container-fluid {
     padding: 0 1em;
   }
-  .mobile-menu-link-list {
-    ul {
-      margin: 0;
-      padding: 0;
-    }
-    li {
-      list-style-type: none;
-      font-family: $font-sans;
-      font-size: rem(16px);
-      font-weight: $font-medium;
-      margin-bottom: 1.5rem;
-      margin-left: 2rem;
-    }
-    h4 {
-      margin-top: 1rem;
-      margin-bottom: 1.5rem;
-      color: $color-barton-light;
-      font-size: rem(16px);
-      a {
-        color: $color-white;
-      }
-    }
-    @media #{$md-viewport} {
-      li {
-        margin-left: 0;
-      }
-    }
-  }
-  .mobile-menu-link-list-view-all {
-    line-height: rem(14px);
-    a {
-      color: $color-white;
-      font-family: $font-sans;
-      font-weight: $font-medium;
-      font-size: rem(11px);
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      -webkit-font-smoothing: subpixel-antialiased;
-    }
-  }
-  .mobile-menu-border-top {
-    border-top: 1px solid $color-white;
-    padding-top: 2rem;
-    margin-top: 1rem;
-    &.mobile-menu-logo {
-      padding-top: 3rem;
-    }
-  }
-  @media #{$md-viewport} {
-    .mobile-menu-border-top {
-      border-top-width: 0;
-      margin-top: 0;
-    }
-  }
   margin-top: 0;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 4rem;
   position: absolute;
   left: ( $drawer-width * -1);

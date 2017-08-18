@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="container container-fluid">
   <div class="row">
-    <div class="sidebar start-xs col-sm-3 col-xs-12">
+    <div class="sidebar start-xs col-md-3 col-xs-12 hidden-xs hidden-sm">
 
       {% assign new_collection = site.collections | where: "title", page.nav_from_collection | first %}
       {% assign items = new_collection.docs | sort: "url" | sort: "position" %}
@@ -11,7 +11,7 @@ layout: default
       {% include recursive-nav.html items=items base_path=base_path  %}
 
     </div>
-    <div class="col-sm-7 col-sm-offset-1 col-xs-12">
+    <div class="col-md-7 col-md-offset-1 col-xs-12">
       <section class="page-header start-xs">
         <div class="row">
           <div class="col-xs"><h1>{{ page.title }}</h1></div>
