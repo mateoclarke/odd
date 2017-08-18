@@ -8,7 +8,7 @@ The site is forked from [usds.gov](https://usds.gov), which is built on the [U.S
 ## Setup
 ---
 1. If you're using a Mac, install homebrew (see http://brew.sh/)
-2. After installing git (`brew install git`), `cd` to the directory where you want to check-out the site, and then clone it (`git clone https://github.com/usds/website.git`)
+2. After installing git (`brew install git`), `cd` to the directory where you want to check-out the site, and then clone it (`git clone https://github.com/cityofaustin/innovation-fellows.git`)
 3. Install rvm (`\curl -sSL https://get.rvm.io | sudo bash -s stable`), make your current user a member of the rvm group, and then install a new version of ruby (`rvm install 2.3.1`) or make sure you're using it: `rvm use 2.3.1`
 4. Install the `bundler` gem, then use bundler to install other project dependencies (`gem install bundler && bundle install`)
 
