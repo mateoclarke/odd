@@ -10,3 +10,12 @@ footer_lede: We need top talent to help deliver the services that our citizens d
 footer_button_text: Join us
 footer_button_path: /join/us
 footer_credits: Office of Innovation • Office of Communications & Technology Management
+site_nav:
+  - label: Home
+    path: /
+  - label: About Us
+    path: /about/
+  - label: 'Medium: Civiqueso'
+    path: /posts/
+  - label: Join Us
+    path: /join/

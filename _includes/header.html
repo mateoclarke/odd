@@ -28,12 +28,7 @@
         <span>{{ site.data.labels.site_title }}</span>
       </div>
       <div class="center-xs col-xs-12 col-sm-4">
-        <nav>
-          <ul>
-            <li><a class="active" href="{{ site.baseurl }}/">{{ site.data.labels.home }}</a></li>
-            <li>More links here</li>
-          </ul>
-        </nav>
+        {% include site-nav.html %}
       </div>
       <div class="end-xs hidden-xs col-sm-4 button-wrap">
         <a class="usa-button usa-button-outline-inverse" href="{{ site.data.labels.header_projects_button_url }}">{{ site.data.labels.header_projects_button_text }}</a>
