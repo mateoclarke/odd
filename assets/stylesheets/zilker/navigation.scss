@@ -15,7 +15,7 @@ $drawer-width: 28rem;
   background: $color-theme-dark-bg;
   color: $color-theme-dark-hover;
   -webkit-font-smoothing: antialiased;
-  @media #{$sm-viewport} {
+  @media #{$md-viewport} {
     background: $color-theme-dark-bg;
   }
   .container-fluid {
@@ -31,7 +31,7 @@ $drawer-width: 28rem;
     line-height: $pre-header-height / 3;
     align-self: center;
     display: none;
-    @media #{$sm-viewport} {
+    @media #{$md-viewport} {
       display: block;
     }
   }
@@ -42,7 +42,7 @@ $drawer-width: 28rem;
     font-weight: bold;
     font-size: 1.5rem;
     align-self: center;
-    @media #{$sm-viewport} {
+    @media #{$md-viewport} {
       display: none;
     }
   }
@@ -56,7 +56,7 @@ $drawer-width: 28rem;
     fill: $color-white;
     color: $color-white;
     position: relative;
-    @media #{$sm-viewport} {
+    @media #{$md-viewport} {
       display: none;
     }
     .icon {
@@ -101,7 +101,7 @@ $drawer-width: 28rem;
   z-index: 1;
   position: relative; // for dropdown
   display: none;
-  @media #{$sm-viewport} {
+  @media #{$md-viewport} {
     display: block;
   }
   nav {
@@ -109,8 +109,7 @@ $drawer-width: 28rem;
       margin: 0;
       padding: 0;
       font-size: rem(15px);
-      @media #{$md-viewport} {
-      }
+      white-space: nowrap;
       & > li {
         text-align: left;
         margin: 0;
@@ -124,7 +123,7 @@ $drawer-width: 28rem;
           padding: 0 $site-header-height / 4;
           line-height: $site-header-height;
           display: block;
-          font-weight: normal;
+          font-weight: $font-medium;
           position: relative;
           color: $color-theme-dark-text;
           text-decoration: none;
@@ -220,6 +219,36 @@ $drawer-width: 28rem;
   .footer-menu {
     margin-top: 4rem;
     margin-bottom: 2rem;
+    color: $color-theme-dark-text;
+    -webkit-font-smoothing: antialiased;
+    font-family: $font-sans;
+    nav {
+      ul {
+        margin: 0;
+        padding: 0;
+        font-size: rem(15px);
+        white-space: nowrap;
+        & > li {
+          text-align: left;
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          display: inline-block;
+          position: relative;
+          & > a {
+            margin: 0 1em;
+            display: block;
+            font-weight: $font-medium;
+            position: relative;
+            color: $color-theme-dark-text;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -267,7 +296,7 @@ $drawer-width: 28rem;
 
 
 .site-mobile-menu {
-  @media #{$sm-viewport} {
+  @media #{$md-viewport} {
     display: none;
   }
   .container-fluid {
@@ -295,7 +324,7 @@ $drawer-width: 28rem;
         color: $color-white;
       }
     }
-    @media #{$sm-viewport} {
+    @media #{$md-viewport} {
       li {
         margin-left: 0;
       }
@@ -321,7 +350,7 @@ $drawer-width: 28rem;
       padding-top: 3rem;
     }
   }
-  @media #{$sm-viewport} {
+  @media #{$md-viewport} {
     .mobile-menu-border-top {
       border-top-width: 0;
       margin-top: 0;
@@ -349,7 +378,7 @@ $drawer-width: 28rem;
   transition: left .25s, top .25s;
 
   // reset to normal for desktop
-  @media #{$sm-viewport} {
+  @media #{$md-viewport} {
     position: static;
     width: auto;
     min-height: none;

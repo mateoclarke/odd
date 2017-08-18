@@ -28,14 +28,14 @@ layout: full-page
 </section>
 
 
-{% assign staff = site.people | where: "role", "staff" | sort: "start_date" | reverse %}
+{% assign staff = site.people | where: "role", "staff" | sort: "start_date"  %}
 {% include page-section--people.html
   section_headline=page.staff_section_headline
   people=staff
   section_theme="gray" %}
 
 
-{% assign fellows = site.people | where: "role", "fellow" | sort: "start_date" | reverse %}
+{% assign fellows = site.people | where: "role", "fellow" | sort: "start_date"  %}
 {% include page-section--people.html
   section_headline=page.fellows_section_headline
   people=fellows %}
