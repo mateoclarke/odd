@@ -9,11 +9,29 @@ layout: default
       {% assign items = new_collection.docs | sort: "url" | sort: "position" %}
       {% assign base_path = page.nav_from_collection | downcase | prepend: "/_" | append: "/"  %}
       {% include recursive-nav.html items=items base_path=base_path  %}
-      
+
     </div>
-    <div class="page start-xs col-sm-8 col-xs-12">
-      {% include page-header.html sidebar=true %}
+    <div class="page start-xs col-sm-7 col-sm-offset-1 col-xs-12">
+      <section class="page-header">
+        <div class="row">
+          <div class="col-xs"><h1>{{ page.title }}</h1></div>
+        </div>
+        {% if page.lede_markdown %}
+        <div class="row">
+          <div class="col-xs lede">{{ page.lede_markdown | markdownify | trim }}</div>
+        </div>
+        {% endif %}
+        {% if page.lede_button_text and page.lede_button_path %}
+        <div class="row">
+          <div class="col-xs">
+            <a href="{{ page.lede_button_path }}" class="usa-button">{{ page.lede_button_text }}</a>
+          </div>
+        </div>
+        {% endif %}
+      </section>
+      <section class="page">
+      {{ content }}
+      </section>
     </div>
-    {{ content }}
   </div>
 </div>

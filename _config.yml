@@ -42,12 +42,11 @@ collections:
 defaults:
 - scope:
     path: ''
+    type: jobs
   values:
-    lede_button_path:
-    lede_button_text: 
-# - scope:
-#     path: ''
-#   values:
+    layout: 'sidebar-page'
+    nav_from_collection: 'Jobs'
+
 
 gems:
   - jekyll-seo-tag
