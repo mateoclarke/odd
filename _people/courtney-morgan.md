@@ -1,9 +1,9 @@
 ---
 name: Courtney Morgan
-discipline: Content Strategy
+discipline: Content Strategist
 start_date: 2017-04-04
 bio: |
-  The opportunity to use my skills to serve an entire community has not come along often. The fellowship gives me the chance to do what I do best in order to help provide the City with long-lasting, innovative solutions to many major public challenges.
+  In the Fellowship, my ability to improve upon complex systems and my expertise in advertising, branding, and strategy is used to help the City of Austin better serve residents. We create innovative and accessible solutions to many public challenges.
 
 photo_path: /assets/img/staff/courtney-morgan.jpg
 role: fellow
