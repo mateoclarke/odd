@@ -452,6 +452,11 @@ html.drawer-open--translate {
         background: $color-theme-dark-accent;
       }
     }
+    &:hover {
+      text-decoration: underline;
+      color: $color-primary-darker;
+      font-weight: $font-medium;
+    }
   }
   .list-heading {
     margin-bottom: 1.85rem;
