@@ -29,6 +29,9 @@ html, html.theme--dark {
     .control-translate span:hover {
       color: $color-theme-light-hover;
     }
+    .no-logo {
+      color: $color-theme-dark-hover;
+    }
   }
   .site-header {
     background: $color-theme-dark-bg;
@@ -98,6 +101,9 @@ html.theme--light {
     border-top-color: $color-theme-light-bg;
     background: $color-theme-light-bg;
     color: $color-theme-light-heading;
+    .no-logo {
+      color: $color-theme-light-text;
+    }
   }
   .site-header {
     background: $color-theme-light-bg;
