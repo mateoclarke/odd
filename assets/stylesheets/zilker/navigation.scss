@@ -98,76 +98,102 @@ $drawer-width: 28rem;
     display: block;
   }
   nav {
-    ul {
+    // horizontal site nav
+    .top-level-list {
       margin: 0;
       padding: 0;
       font-size: rem(15px);
       white-space: nowrap;
-    }
-    li {
-      text-align: left;
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      display: inline-block;
-      position: relative;
-      transition: background .25s;
-      a, span {
-        padding: 0 $site-header-height / 4;
-        line-height: $site-header-height;
-        display: block;
-        font-weight: $font-normal;
+      & > li {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: inline-block;
         position: relative;
-        color: $color-theme-dark-text;
-        text-decoration: none;
-        &:hover {
-          font-weight: $font-medium;
-          text-decoration: underline;
-        }
-        &.active-parent {
-          &:hover {
-            text-decoration: none;
+        transition: background .25s;
+        & > a, & > span {
+          padding: 0 $site-header-height / 4;
+          line-height: $site-header-height;
+          display: block;
+          font-weight: $font-normal;
+          position: relative;
+          text-decoration: none;
+          &:hover,
+          &:focus {
+            font-weight: $font-medium;
+            text-decoration: underline;
+            .icon {
+              transform: rotate(180deg);
+            }
           }
-          &:after {
-            width: calc(100% - #{$site-header-height / 2} );
-            height: 4px;
-            display: block;
-            content: "";
-            position: absolute;
-            bottom: $site-header-height / 4;
+          &:hover + .list,
+          &:focus + .list,
+          & + .list:hover,
+          & + .list:focus  {
+            max-height: 80vh;  
+          }
+          &.active-parent {
+            &:hover {
+              text-decoration: none;
+            }
+            &:after {
+              width: calc(100% - #{$site-header-height / 2} );
+              height: 4px;
+              display: block;
+              content: "";
+              position: absolute;
+              bottom: $site-header-height / 4;
+            }
+          }
+          .icon {
+            height: 2rem;
+            width: 2rem;
+            transition: transform .25s;
           }
         }
       }
-      .icon { height: 2rem; }
-      ul {
-        background: $color-white;
-        position: absolute;
-        transition: top .25s;
-        left: 0;
-        min-width: 100%;
-        width: auto;
-        overflow: hidden;
-        transition: background .25s, max-height .25s;
-        max-height: 0;
+    }
+    // first list once we start being recursive.
+    // main container for dropdowns in sitenav
+    .list {
+      background: $color-theme-dark-hover;
+      position: absolute;
+      transition: top .25s;
+      left: 0;
+      min-width: 100%;
+      width: auto;
+      overflow: hidden;
+      transition: background .25s, max-height .25s;
+      max-height: 0;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      // contains the inner-list and list-heading for each group
+      & > li {
+        margin: 3rem;
+      }
+
+      .list-heading {
+        margin-top: 0;
+      }
+      // where the article children are
+      .inner-list {
+        padding-left: 0;
+        list-style-type: none;
+        margin-bottom: 1rem;
         li a {
+          font-size: rem(15px);
           display: block;
           line-height: $base-font-size;
-          padding: $site-header-height / 4;
+          padding: .5rem 0;
           white-space: nowrap;
           width: 24rem;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
         }
-      }
-      &:hover,
-      ul:hover {
-        cursor: pointer;
-      }
-      &:hover ul,
-      ul:hover {
-        // limit of 6 items in dropdown lists
-        max-height: 6 * 4 * $base-font-size ; // > 28rem
       }
     }
   }

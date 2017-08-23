@@ -33,8 +33,8 @@ html, html.theme--dark {
   .site-header {
     background: $color-theme-dark-bg;
     color: $color-theme-dark-text;
-    nav ul > li > a,
-    nav ul > li > span {
+    nav .top-level-list > li > a,
+    nav .top-level-list > li > span {
       color: $color-theme-dark-text;
       &.active-parent:after {
         background: $color-theme-dark-accent;
@@ -102,8 +102,8 @@ html.theme--light {
   .site-header {
     background: $color-theme-light-bg;
     color: $color-theme-light-heading;
-    nav ul > li > a,
-    nav ul > li > span {
+    nav .top-level-list > li > a,
+    nav .top-level-list > li > span {
       color: $color-theme-light-heading;
       &.active-parent:after {
         background: $color-theme-light-accent;
