@@ -116,18 +116,26 @@ $drawer-width: 28rem;
         padding: 0 $site-header-height / 4;
         line-height: $site-header-height;
         display: block;
-        font-weight: $font-medium;
+        font-weight: $font-normal;
         position: relative;
         color: $color-theme-dark-text;
         text-decoration: none;
-        &.active:after {
-          width: calc(100% - #{$site-header-height / 2} );
-          height: 4px;
-          display: block;
-          content: "";
-          position: absolute;
-          bottom: $site-header-height / 4;
-
+        &:hover {
+          font-weight: $font-medium;
+          text-decoration: underline;
+        }
+        &.active-parent {
+          &:hover {
+            text-decoration: none;
+          }
+          &:after {
+            width: calc(100% - #{$site-header-height / 2} );
+            height: 4px;
+            display: block;
+            content: "";
+            position: absolute;
+            bottom: $site-header-height / 4;
+          }
         }
       }
       .icon { height: 2rem; }

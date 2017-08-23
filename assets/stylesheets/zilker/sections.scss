@@ -36,7 +36,7 @@ html, html.theme--dark {
     nav ul > li > a,
     nav ul > li > span {
       color: $color-theme-dark-text;
-      &.active:after {
+      &.active-parent:after {
         background: $color-theme-dark-accent;
       }
       &:hover, ul:hover {
@@ -105,7 +105,7 @@ html.theme--light {
     nav ul > li > a,
     nav ul > li > span {
       color: $color-theme-light-heading;
-      &.active:after {
+      &.active-parent:after {
         background: $color-theme-light-accent;
       }
       &:hover, ul:hover {
