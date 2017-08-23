@@ -184,14 +184,14 @@ $drawer-width: 28rem;
     text-decoration: none;
   }
   .footer-logo {
-    img {
+    svg {
       width: 8rem;
       height: 8rem;
       margin-bottom: 2rem;
       margin-top: 2rem;
     }
     @media #{$md-viewport} {
-      img {
+      svg {
         width: 12rem;
         height: 12rem;
       }

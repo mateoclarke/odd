@@ -19,3 +19,10 @@ site_nav:
     path: /posts/
   - label: Join Us
     path: /join/
+social_icons:
+  medium_path: https://medium.com/city-of-austin-design-technology-innovation
+  medium_title: Read Medium Posts by @Civiqueso
+  github_path: https://github.com/cityofaustin
+  github_title: Check out the City of Austin's Open Source projects
+  twitter_path: https://twitter.com/civiqueso
+  twitter_title: Read Tweets by @Civiqueso

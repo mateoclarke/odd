@@ -6,8 +6,10 @@
 
   <div class="container-fluid">
     <div class="row">
-      <button id="drawer-button--menu" class="col-xs usa-button mobile-menu-button">mobile menu button</button>
-
+      <button id="drawer-button--menu" class="col-xs usa-button mobile-menu-button">
+        <svg class="icon icon--menu" width="15" height="15" viewbox="0 0 32 32" preserveAspectRatio="xMinYMin"><use xlink:href="#icon--menu"></use></svg>
+        <svg class="icon icon--close" width="15" height="15" viewbox="0 0 32 32" preserveAspectRatio="xMinYMin"><use xlink:href="#icon--close"></use></svg>
+      </button>
 
       <div class="no-logo start-xs col-xs">
         <span>{{ site.data.labels.intro_markdown | strip_newlines | markdownify }}</span>
