@@ -16,8 +16,8 @@ baseurl: /innovation-fellows # the base hostname & protocol for your site
 twitter_username: civiqueso
 github_username:  cityofaustin
 medium_url: https://medium.com/city-of-austin-design-technology-innovation
-
-
+theme: dark
+# dark is the default, light will also work.
 
 # Build settings
 markdown: kramdown

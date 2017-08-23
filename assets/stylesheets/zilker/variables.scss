@@ -72,6 +72,8 @@ $color-theme-dark-heading:   $color-base;
 $color-theme-dark-text:      $color-white;
 $color-theme-dark-hover:     $color-gray-lightest;
 
+// See sections.scss for how these are used in the light and dark themes, and to add more.
+// for now, dark theme is default
 
 // Mobile First Breakpoints
 $small-screen:      481px;
