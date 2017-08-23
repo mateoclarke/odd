@@ -21,6 +21,8 @@
   color: $color-gray;
   font-weight: bold;
   line-height: rem(18px);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .tile-text {
   padding-left: 2.5rem;
@@ -30,6 +32,7 @@
 
   h3 {
     font-size: rem(26px);
+    line-height: rem(30px);
     margin:0 0 1rem;
     color: $color-primary;
     padding-top: 2.5rem;
@@ -95,6 +98,7 @@
 .tile--post {
   h3 {
     font-size: $h4-font-size;
+    line-height: rem(24px);
   }
   .tile-meta {
     margin: 1rem 0;
@@ -104,6 +108,7 @@
   }
   .tile-author {
     font-size: rem(13px);
+    font-weight: $font-medium;
   }
   .tile-date {
     margin-top: 0;
@@ -139,7 +144,7 @@
   margin-bottom: 4rem;
 }
 .press-title {
-  margin-top: 0;
+  margin-top: 3rem;
   padding-top: 2rem;
   border-top: 2px solid $color-gray-lighter;
   a {
