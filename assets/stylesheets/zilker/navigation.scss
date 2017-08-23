@@ -394,6 +394,8 @@ $drawer-width: 28rem;
 .main {
   position: relative;
   left: 0;
+}
+main {
   padding-top: $pre-header-height;
   @media #{$md-viewport} {
     padding-top: ($pre-header-height + $site-header-height);
