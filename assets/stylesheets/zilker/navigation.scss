@@ -412,11 +412,9 @@ html.drawer-open--menu {
   }
 }
 
-// easiest if everything is the same height
 html.drawer-open--translate  .header--translate {
   height: $pre-header-height;
 }
-// two rows show
 html.drawer-open--translate {
   .site-mobile-menu {
     top: 10 + ($pre-header-height * 2);
