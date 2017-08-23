@@ -20,3 +20,7 @@
 .fixedsticky-on + .fixedsticky-dummy {
 	display: block;
 }
+
+body {
+  min-height: auto !important; // google translate widget messes with this
+}

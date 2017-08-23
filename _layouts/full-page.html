@@ -5,24 +5,18 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-lg-offset-2 col-lg-8 col-xs-10 col-xs-offset-1">
-        <div class="row">
-          <div class="col-xs"><h1>{{ page.title }}</h1></div>
-        </div>
-        {% if page.lede_markdown %}
-        <div class="row">
-          <div class="col-xs lede">{{ page.lede_markdown | markdownify | trim }}</div>
-        </div>
-        {% endif %}
-        {% if page.lede_button_text and page.lede_button_path %}
-        <div class="row">
-          <div class="col-xs">
-            <a href="{{ site.baseurl }}{{ page.lede_button_path }}" class="usa-button">{{ page.lede_button_text }}</a>
-          </div>
-        </div>
-        {% endif %}
+        {% include page-section--header.html %}
       </div>
     </div>
   </div>
 </section>
 
-{{ content }}
+<section class="page-section center-xs">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-offset-2 col-lg-8 col-xs-10 col-xs-offset-1">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</section>
