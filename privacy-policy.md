@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-layout: full-page
+layout: default
 sitemap: false
 ---
 
