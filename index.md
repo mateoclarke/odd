@@ -12,8 +12,8 @@ secondary_section_buttons:
     button_path: /join/
 
 
-project_tiles_headline: Featured Projects
-project_tiles_lede_markdown: These are a few of our current partner projects with City departments.
+project_tiles_headline: Keep Up-to-Date with Our Projects
+project_tiles_lede_markdown: A few of our current partner projects with City departments.
 project_tiles_button_text: See all projects
 project_tiles_button_path: '#URL'
 
@@ -22,7 +22,7 @@ people_lede_markdown: 'Government is not an abstract institution or a concept. O
 people_button_text: Meet the team
 people_button_path: /about/
 
-medium_headline: Follow us on Medium
+medium_headline: Follow Us on Medium
 medium_lede_markdown: 'Civiqueso is our Medium publication—stories of design, technology, and innovation in the civic melting pot of Austin, Texas.'
 medium_button_text: See recent posts
 medium_button_path: /posts/
