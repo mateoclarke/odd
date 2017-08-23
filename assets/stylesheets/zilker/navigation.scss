@@ -79,7 +79,9 @@ $drawer-width: 28rem;
     position: relative;
     flex-grow: 0;
     white-space: nowrap;
+    min-width: 8rem;
     span {
+      display:block;
       cursor: pointer;
       font-weight: 500;
       &:hover {
@@ -131,7 +133,7 @@ $drawer-width: 28rem;
           &:focus + .list,
           & + .list:hover,
           & + .list:focus  {
-            max-height: 80vh;  
+            max-height: 80vh;
           }
           &.active-parent {
             &:hover {
