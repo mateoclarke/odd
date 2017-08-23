@@ -9,7 +9,7 @@
 {% if page.lede_button_text and page.lede_button_path %}
 <div class="row">
   <div class="col-xs">
-    <a href="{{ site.baseurl }}{{ page.lede_button_path }}" class="usa-button">{{ page.lede_button_text }}</a>
+    <a href="{% unless page.lede_button_path contains "http" %}{{ site.baseurl }}{% endunless %}{{ page.lede_button_path }}" class="usa-button">{{ page.lede_button_text }}</a>
   </div>
 </div>
 {% endif %}

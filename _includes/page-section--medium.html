@@ -16,7 +16,7 @@
     {% if include.button_text and include.button_path %}
     <div class="row">
       <div class="col-xs">
-        <a href="{{ site.baseurl }}{{ include.button_path }}" class="usa-button">{{ include.button_text }}</a>
+        <a href="{% unless include.button_path contains "http" %}{{ site.baseurl }}{% endunless %}{{ include.button_path }}" class="usa-button">{{ include.button_text }}</a>
       </div>
     </div>
     {% endif %}
