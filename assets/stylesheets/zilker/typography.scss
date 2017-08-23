@@ -28,11 +28,10 @@ h2 {
   }
 }
 // this won't work all the time, but works for our usecase right now
-.page-section.start-xs h2:after { margin: 12px 0; }
-.page-section.center-xs h2:after { margin: 8px auto; }
+.page-section.start-xs h2:after { margin: 20px 0 30px 0; }
+.page-section.center-xs h2:after { margin: 20px auto; }
 
 h3 {
-  color: $color-gray;
   font-size: $h3-font-size;
   font-weight: $font-medium;
   margin-bottom: .5em;
@@ -60,8 +59,8 @@ h6 {
 
 .lede p {
   font-size: $lede-font-size;
-  margin-bottom: 2em;
-  margin-top: .5em;
+  margin-bottom: 1em;
+  margin-top: .1em;
 }
 a {
   color: $color-primary;

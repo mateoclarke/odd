@@ -60,35 +60,6 @@ button,
     background-color: $color-primary-darkest;
   }
 
-
-  &.usa-button-secondary {
-    background-color: $color-secondary;
-
-    &:hover,
-    &.usa-button-hover {
-      background-color: $color-secondary-dark;
-    }
-
-    &:active,
-    &.usa-button-active {
-      background-color: $color-secondary-darkest;
-    }
-  }
-
-  &.usa-button-gray {
-    background-color: $color-gray;
-
-    &:hover,
-    &.usa-button-hover {
-      background-color: $color-gray-dark;
-    }
-
-    &:active,
-    &.usa-button-active {
-      background-color: $color-base;
-    }
-  }
-
   &.usa-button-outline {
     background-color: transparent;
     box-shadow: $button-stroke $color-primary;
@@ -133,29 +104,5 @@ button,
     &.usa-button-focus {
       box-shadow: $button-stroke $color-gray-light, $focus-shadow;
     }
-  }
-
-  &.usa-button-big {
-    font-size: 1.9rem;
-    padding: 1.5rem 3rem;
-  }
-}
-/* stylelint-disable */
-
-.usa-button:disabled,
-.usa-button-disabled {
-  background-color: $color-gray-lighter;
-  color: $color-gray-dark;
-  pointer-events: none;
-
-  &:hover,
-  &.usa-button-hover,
-  &:active,
-  &.usa-button-active,
-  &:focus {
-    background-color: $color-gray-lighter;
-    border: 0;
-    box-shadow: none;
-    color: $color-gray-dark;
   }
 }
