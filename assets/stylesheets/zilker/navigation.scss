@@ -404,7 +404,7 @@ $drawer-width: 28rem;
 .main, .site-mobile-menu, .pre-header, .site-header {
   transition: left .25s, top .25s;
   @media #{$md-viewport} {
-    left: 0;
+    left: 0 !important;
   }
 }
 
