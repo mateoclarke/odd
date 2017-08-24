@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="row center-xs">
       <div class="footer-logo">
-        <img src="{{ site.baseurl }}/assets/img/coa-austin-seal-white.svg" alt="City of Austin Seal" height="100" width="100"/>
+        <svg class="icon icon--city-seal" width="80" height="80" viewbox="0 0 52 52" preserveAspectRatio="xMinYMin"><use xlink:href="#icon--city-seal"></use></svg></a>
       </div>
     </div>
     <div class="row center-xs">
@@ -28,7 +28,14 @@
       <div class="mini-footer--center footer-credits center-xs col-sm-8">
         <span class="footer-credits">{{ site.data.labels.footer_credits }}</span>
       </div>
-      <div class="mini-footer--right end-sm center-xs col-sm-2">Social Icons Here</div>
+      <div class="mini-footer--right end-sm center-xs col-sm-2">
+        <a href="{{ site.data.labels.social_icons.medium_path }}" target="_blank" title="{{ site.data.labels.social_icons.medium_title }}"><svg class="icon icon--medium" width="15" height="15" viewbox="0 0 32 32" preserveAspectRatio="xMinYMin"><use xlink:href="#icon--medium"></use></svg></a>
+        <a href="{{ site.data.labels.social_icons.github_path }}" target="_blank" title="{{ site.data.labels.social_icons.github_title }}"><svg class="icon icon--github" width="15" height="15" viewbox="0 0 32 32" preserveAspectRatio="xMinYMin"><use xlink:href="#icon--github"></use></svg></a>
+        <a href="{{ site.data.labels.social_icons.twitter_path }}" target="_blank" title="{{ site.data.labels.social_icons.twitter_title }}"><svg class="icon icon--twitter" width="15" height="15" viewbox="0 0 32 32" preserveAspectRatio="xMinYMin"><use xlink:href="#icon--twitter"></use></svg></a>
+
+
+
+      </div>
     </div>
   </div>
 </footer>

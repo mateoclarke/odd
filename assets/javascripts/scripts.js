@@ -1,3 +1,21 @@
+/**
+ * togglePressed() toggles the aria-pressed atribute between true or false
+ *
+ * @param ( id object) button to be operated on
+ *
+ * @return N/A
+ */
+function togglePressed(element) {
+
+  // reverse the aria-pressed state
+  if (element.attr('aria-pressed') == 'true') {
+    element.attr('aria-pressed', 'false');
+  }
+  else {
+    element.attr('aria-pressed', 'true');
+  }
+}
+
 var parseMediumJSON = function(post_rows) {
   // max 10 posts
   post_rows = post_rows || 10;
@@ -59,6 +77,7 @@ var initMobileMenus = function() {
   var menuButton = $("#drawer-button--menu");
   menuButton.click(function () {
     html.toggleClass("drawer-open--menu");
+    togglePressed(menuButton);
   });
 
   var translateButton = $("#drawer-button--translate");
@@ -67,15 +86,7 @@ var initMobileMenus = function() {
     if (html.hasClass("drawer-open--translate")) {
       $(window).scrollTop(0);
     }
-  });
-
-  var searchButton = $("#drawer-button--search");
-  searchButton.click(function () {
-    html.toggleClass("drawer-open--search");
-  });
-  var cancelSearchButton = $("#cancel-button--search");
-  cancelSearchButton.click(function () {
-    html.toggleClass("drawer-open--search");
+    togglePressed(translateButton);
   });
 
 }

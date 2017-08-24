@@ -19,7 +19,7 @@ layout: default
         <div class="row">
           <div class="col-xs">
             {% for button in page.secondary_section_buttons %}
-            <a href="{{ button.button_path }}" class="usa-button">{{ button.button_text }}</a>
+            <a href="{% unless button.button_path contains "http" %}{{ site.baseurl }}{% endunless %}{{ button.button_path }}" class="usa-button">{{ button.button_text }}</a>
             {% endfor %}
           </div>
         </div>

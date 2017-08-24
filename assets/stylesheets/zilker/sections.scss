@@ -1,5 +1,7 @@
 section {}
-
+.page-header + .page-section {
+  padding-top: 0;
+}
 .page-section {
   margin-top: 1em;
   margin-bottom: 3em;
@@ -27,14 +29,17 @@ html, html.theme--dark {
     .control-translate span:hover {
       color: $color-theme-light-hover;
     }
+    .no-logo {
+      color: $color-theme-dark-hover;
+    }
   }
   .site-header {
     background: $color-theme-dark-bg;
     color: $color-theme-dark-text;
-    nav ul > li > a,
-    nav ul > li > span {
+    nav .top-level-list > li > a,
+    nav .top-level-list > li > span {
       color: $color-theme-dark-text;
-      &.active:after {
+      &.active-parent:after {
         background: $color-theme-dark-accent;
       }
       &:hover, ul:hover {
@@ -74,6 +79,7 @@ html, html.theme--dark {
     .footer-credits {
       color: $color-theme-dark-hover;
     }
+
   }
   .mini-footer {
     a {
@@ -95,14 +101,17 @@ html.theme--light {
     border-top-color: $color-theme-light-bg;
     background: $color-theme-light-bg;
     color: $color-theme-light-heading;
+    .no-logo {
+      color: $color-theme-light-text;
+    }
   }
   .site-header {
     background: $color-theme-light-bg;
     color: $color-theme-light-heading;
-    nav ul > li > a,
-    nav ul > li > span {
+    nav .top-level-list > li > a,
+    nav .top-level-list > li > span {
       color: $color-theme-light-heading;
-      &.active:after {
+      &.active-parent:after {
         background: $color-theme-light-accent;
       }
       &:hover, ul:hover {
@@ -141,6 +150,12 @@ html.theme--light {
       color: inherit;
     }
     .footer-credits {
+      color: $color-theme-light-text;
+    }
+    .icon {
+      color: $color-theme-light-heading;
+    }
+    .footer-logo .icon {
       color: $color-theme-light-text;
     }
   }

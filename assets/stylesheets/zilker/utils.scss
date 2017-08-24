@@ -24,3 +24,7 @@
 body {
   min-height: auto !important; // google translate widget messes with this
 }
+.hidden {
+	display: none;
+	height: 0;
+}

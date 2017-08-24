@@ -3,7 +3,7 @@ site_title: Design, Technology, & Innovation Fellows
 translate: Translate
 home: Home
 header_projects_button_text: Go to our Projects site
-header_projects_button_url: #
+header_projects_button_url: http://projects.austintexas.io/
 last_revision_prefix: Updated
 footer_headline: Be part of the change.
 footer_lede: We need top talent to help deliver the services that our citizens deserve.
@@ -19,3 +19,10 @@ site_nav:
     path: /posts/
   - label: Join Us
     path: /join/
+social_icons:
+  medium_path: https://medium.com/city-of-austin-design-technology-innovation
+  medium_title: Read Medium Posts by @Civiqueso
+  github_path: https://github.com/cityofaustin
+  github_title: Check out the City of Austin's Open Source projects
+  twitter_path: https://twitter.com/civiqueso
+  twitter_title: Read Tweets by @Civiqueso

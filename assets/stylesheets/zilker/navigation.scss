@@ -5,14 +5,14 @@ $pre-header-height: 4rem;
 $drawer-width: 28rem;
 
 .pre-header {
-  // height: 10 + $pre-header-height;
   font-family: $font-sans;
   z-index: 1;
-  position: relative; // for dropdown
   box-sizing: border-box;
   border-top: 10rem solid $color-theme-dark-bg;
   margin-top: -10rem; // to compensate for non-white page pg on inertia scroll to top
   -webkit-font-smoothing: antialiased;
+  position: fixed;
+  width: 100%;
   .container-fluid {
     padding-right: .5em;
     padding-left: .5em;
@@ -79,7 +79,9 @@ $drawer-width: 28rem;
     position: relative;
     flex-grow: 0;
     white-space: nowrap;
+    min-width: 8rem;
     span {
+      display:block;
       cursor: pointer;
       font-weight: 500;
       &:hover {
@@ -92,74 +94,109 @@ $drawer-width: 28rem;
   -webkit-font-smoothing: antialiased;
   font-family: $font-sans;
   z-index: 1;
-  position: relative; // for dropdown
+  position: fixed;
+  top: $pre-header-height;
+  width: 100%;
   display: none;
   @media #{$md-viewport} {
     display: block;
   }
   nav {
-    ul {
+    // horizontal site nav
+    .top-level-list {
       margin: 0;
       padding: 0;
       font-size: rem(15px);
       white-space: nowrap;
+      & > li {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: inline-block;
+        position: relative;
+        transition: background .25s;
+        & > a, & > span {
+          padding: 0 $site-header-height / 4;
+          line-height: $site-header-height;
+          display: block;
+          font-weight: $font-normal;
+          position: relative;
+          text-decoration: none;
+          &:hover,
+          &:focus {
+            font-weight: $font-medium;
+            text-decoration: underline;
+            .icon {
+              transform: rotate(180deg);
+            }
+          }
+          &:hover + .list,
+          &:focus + .list,
+          & + .list:hover,
+          & + .list:focus  {
+            max-height: 80vh;
+          }
+          &.active-parent {
+            &:hover {
+              text-decoration: none;
+            }
+            &:after {
+              width: calc(100% - #{$site-header-height / 2} );
+              height: 4px;
+              display: block;
+              content: "";
+              position: absolute;
+              bottom: $site-header-height / 4;
+            }
+          }
+          .icon {
+            height: 2rem;
+            width: 2rem;
+            transition: transform .25s;
+          }
+        }
+      }
     }
-    li {
-      text-align: left;
+    // first list once we start being recursive.
+    // main container for dropdowns in sitenav
+    .list {
+      background: $color-theme-dark-hover;
+      position: absolute;
+      left: 0;
+      min-width: 100%;
+      width: auto;
+      overflow: hidden;
+      transition: background .25s, max-height .25s;
+      max-height: 0;
       margin: 0;
       padding: 0;
       list-style-type: none;
-      display: inline-block;
-      position: relative;
-      transition: background .25s;
-      a, span {
-        padding: 0 $site-header-height / 4;
-        line-height: $site-header-height;
-        display: block;
-        font-weight: $font-medium;
-        position: relative;
-        color: $color-theme-dark-text;
-        text-decoration: none;
-        &.active:after {
-          width: calc(100% - #{$site-header-height / 2} );
-          height: 4px;
-          display: block;
-          content: "";
-          position: absolute;
-          bottom: $site-header-height / 4;
 
-        }
+      // contains the inner-list and list-heading for each group
+      & > li {
+        margin: 3rem;
       }
-      .icon { height: 2rem; }
-      ul {
-        background: $color-white;
-        position: absolute;
-        transition: top .25s;
-        left: 0;
-        min-width: 100%;
-        width: auto;
-        overflow: hidden;
-        transition: background .25s, max-height .25s;
-        max-height: 0;
+
+      .list-heading {
+        margin-top: 0;
+      }
+      // where the article children are
+      .inner-list {
+        padding-left: 0;
+        list-style-type: none;
+        margin-bottom: 1rem;
         li a {
+          font-size: rem(15px);
           display: block;
           line-height: $base-font-size;
-          padding: $site-header-height / 4;
+          padding: .5rem 0;
           white-space: nowrap;
           width: 24rem;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
         }
-      }
-      &:hover,
-      ul:hover {
-        cursor: pointer;
-      }
-      &:hover ul,
-      ul:hover {
-        // limit of 6 items in dropdown lists
-        max-height: 6 * 4 * $base-font-size ; // > 28rem
       }
     }
   }
@@ -184,14 +221,14 @@ $drawer-width: 28rem;
     text-decoration: none;
   }
   .footer-logo {
-    img {
+    svg {
       width: 8rem;
       height: 8rem;
       margin-bottom: 2rem;
       margin-top: 2rem;
     }
     @media #{$md-viewport} {
-      img {
+      svg {
         width: 12rem;
         height: 12rem;
       }
@@ -293,7 +330,7 @@ $drawer-width: 28rem;
         padding: .5rem 0;
         list-style-type: none;
         display: block;
-        & > a {
+        a {
           display: block;
           font-weight: $font-medium;
           position: relative;
@@ -312,6 +349,30 @@ $drawer-width: 28rem;
             }
           }
         }
+        .list {
+          margin: 0 0 0 2rem;
+          padding: 0;
+          font-size: rem(15px);
+          h6 {
+            font-size: rem(13px);
+            margin: 3rem 0 0;
+          }
+          li {
+            margin: 0;
+            padding: 0;
+          }
+        }
+        .inner-list {
+          margin: 0;
+          padding: 0;
+          font-size: rem(15px);
+          li {
+            margin: 1rem 0 1.5rem;
+            a {
+              font-weight: $font-normal;
+            }
+          }
+        }
       }
     }
   }
@@ -324,9 +385,9 @@ $drawer-width: 28rem;
   position: absolute;
   left: ( $drawer-width * -1);
   width: $drawer-width;
-  top: 10 + $pre-header-height; // see border on .pre-header to accomodate for intertia scroll overflow
-  z-index: 1000;
-  height: calc(100% - (10rem + #{$pre-header-height}));
+  top: $pre-header-height;
+  z-index: 0;
+  height: calc(100% - (#{$pre-header-height}));
 }
 
 // items that should function like the main element when mobile menu opens/closes
@@ -334,16 +395,18 @@ $drawer-width: 28rem;
   position: relative;
   left: 0;
 }
+main {
+  padding-top: $pre-header-height;
+  @media #{$md-viewport} {
+    padding-top: ($pre-header-height + $site-header-height);
+  }
+}
 
 // make sure they have the same transitons
-.main, .site-mobile-menu {
+.main, .site-mobile-menu, .pre-header, .site-header {
   transition: left .25s, top .25s;
-
-  // reset to normal for desktop
   @media #{$md-viewport} {
-    position: static;
-    width: auto;
-    min-height: none;
+    left: 0 !important;
   }
 }
 
@@ -354,17 +417,11 @@ $drawer-width: 28rem;
   overflow: hidden;
   text-align: center;
   font-size: 1.5rem;
-  div[role="menu"],
-  div[role="search"] {
-    padding: .5rem;
-    line-height: 2.5rem;
-  }
-}
-
-.header--translate {
   .goog-te-gadget {
     font-family: $font-sans;
     color: $color-gray-dark;
+    margin: .5rem 0;
+
   }
   .goog-te-gadget-simple {
     padding: .3rem .5rem; // easier to tap
@@ -388,14 +445,15 @@ html.drawer-open--menu {
   }
 }
 
-// easiest if everything is the same height
 html.drawer-open--translate  .header--translate {
   height: $pre-header-height;
 }
-// two rows show
 html.drawer-open--translate {
+  .site-header {
+    top: ($pre-header-height * 2);
+  }
   .site-mobile-menu {
-    top: 10 + ($pre-header-height * 2);
+    top: ($pre-header-height * 2);
     height: calc(100% - (10rem + (#{$pre-header-height} * 2)));
   }
 }
@@ -429,6 +487,11 @@ html.drawer-open--translate {
         display: block;
         background: $color-theme-dark-accent;
       }
+    }
+    &:hover {
+      text-decoration: underline;
+      color: $color-primary-darker;
+      font-weight: $font-medium;
     }
   }
   .list-heading {

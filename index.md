@@ -18,7 +18,7 @@ secondary_section_buttons:
 project_tiles_headline: Keep Up-to-Date with Our Projects
 project_tiles_lede_markdown: A few of our current partner projects with City departments.
 project_tiles_button_text: See all projects
-project_tiles_button_path: '#URL'
+project_tiles_button_path: 'http://projects.austintexas.io/'
 
 people_headline: By the People, for the People
 people_lede_markdown: 'Government is not an abstract institution or a concept. Our government is us. Meet a few of the newest Design, Technology, & Innovation Fellows who have signed on for tours of duty:'
