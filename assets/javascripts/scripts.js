@@ -46,7 +46,7 @@ var parseMediumJSON = function(post_rows) {
         post_author_pic:  "https://cdn-images-1.medium.com/fit/c/60/60/" + author.imageId,
 
                           // convert date to human-readable string
-        post_date:        new Date(post.latestPublishedAt).format('F j, Y')
+        post_date:        new Date(post.firstPublishedAt).format('F j, Y')
 
       };
 
