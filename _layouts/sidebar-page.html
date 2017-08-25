@@ -16,7 +16,16 @@ layout: default
         {% include page-section--header.html %}
       </section>
       <section class="page-section start-xs">
-      {{ content }}
+        <div class="row">
+          {{ content }}
+        </div>
+        {% if page.lever_link %}
+          <div class="row button-row">
+            <div class="col-xs">
+              <a href="{% unless page.lever_link contains "http" %}{{ site.baseurl }}{% endunless %}{{ page.lever_link }}" class="usa-button">{{ site.data.labels.job_apply_button_text }}</a>
+            </div>
+          </div>
+        {% endif %}
       </section>
     </div>
   </div>
