@@ -1,4 +1,10 @@
 section {}
+.page-photo-header {
+  background: url('../img/home.jpg') no-repeat center;
+  background-size: cover;
+  height: 40vh;
+  max-height: 400px;
+}
 .page-header + .page-section {
   padding-top: 0;
 }
