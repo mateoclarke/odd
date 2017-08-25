@@ -3,7 +3,7 @@ title: Making Permitting Work for Austin
 subtitle: with Development Services
 project_link: http://pages.austintexas.io/projects/permitting/
 link_text: Learn more
-image_path: /assets/img/chihuahua.jpg
+image_path: /assets/img/projects/permitting/permitting.png
 image_description: A City of Austin employee reviews building plans
 date: 2017-06-21
 

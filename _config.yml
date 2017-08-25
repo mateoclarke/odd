@@ -46,7 +46,11 @@ defaults:
   values:
     layout: 'sidebar-page'
     nav_from_collection: 'Jobs'
-
+- scope:
+    path: ''
+    type: projects
+  values:
+    image_path: '/assets/img/projects/project-tile-placeholder.jpg'
 
 gems:
   - jekyll-seo-tag
