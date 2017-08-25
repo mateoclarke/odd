@@ -70,6 +70,36 @@ var parseMediumJSON = function(post_rows) {
   });
 }
 
+
+
+var parseProjectsJSON = function(post_rows) {
+  // max 10 posts
+  post_rows = post_rows || 10;
+
+  // get the template
+  var template_markup = $('#project-template').html();
+
+  // get the data
+  $.getJSON('http://projects.austintexas.io/recent-projects.json', function(posts) {
+    for (var i = 0; i < posts.length; ++i) {
+      var post = posts[i];
+      // for each post, until we hit max
+      // fill out the variables
+      if (i < post_rows ) {
+        var thisInstance = $(template_markup);
+          thisInstance.find('.tile-title').text(post.title);
+          thisInstance.find('.tile-link').attr('href', post.url);
+          thisInstance.find('.tile-img').css('background-image', 'url(' + post.img +')');
+          thisInstance.find('.tile-date').text(post.date);
+          thisInstance.find('.tile-excerpt').text(post.excerpt);
+        $('#projects-container').append(thisInstance);
+        // and append to the container
+      }
+    }
+  });
+}
+
+
 var initMobileMenus = function() {
 
   var html = $("html");
