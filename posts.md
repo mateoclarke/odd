@@ -1,5 +1,5 @@
 ---
-title: "Medium: Civiqueso"
+title: "Civiqueso Posts"
 permalink: /posts/
 layout: posts
 lede_markdown: Our Medium publication is Civiqueso—stories of design, technology, and innovation in the civic melting pot of Austin, Texas.
