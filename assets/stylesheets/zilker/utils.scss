@@ -28,3 +28,7 @@ body {
 	display: none;
 	height: 0;
 }
+// this is a nonstandard element, but it will make Ben happy so ¯\_(ツ)_/¯
+nobr {
+	white-space: nowrap;
+}
