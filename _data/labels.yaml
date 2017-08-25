@@ -1,4 +1,4 @@
-intro_markdown: An official city of Austin website
+intro_markdown: An official City of Austin website
 site_title: Design, Technology, & Innovation Fellows
 translate: Translate
 home: Home
@@ -9,13 +9,13 @@ footer_headline: Be part of the change.
 footer_lede: We need top talent to help deliver the services that our citizens deserve.
 footer_button_text: Join us
 footer_button_path: /join
-footer_credits: Office of Innovation • Office of Communications & Technology Management
+footer_credits: Office of Innovation • Office of Communication & Technology Management
 site_nav:
   - label: Home
     path: /
   - label: About Us
     path: /about/
-  - label: Posts from Civiqueso
+  - label: Civiqueso Posts
     path: /posts/
   - label: Join Us
     path: /join/
