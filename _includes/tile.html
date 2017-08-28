@@ -4,13 +4,12 @@
   <div class="tile-outline">
     <div class="tile-img" style="background-image: url('{% unless include.tile_external %}{{ site.baseurl }}{% endunless %}{{ tile.image_path }}')"></div>
     <div class="tile-text">
-      <h3 class="tile-title">
-        {{ tile.title }}
+      <h3>
+        <span class="tile-title">{{ tile.title }}</span>
         {% if tile.subtitle %}
           <span class="tile-subtitle">{{ tile.subtitle }}</span>
         {% endif %}
       </h3>
-
       {% if include.tile_type == "project" %}
         <p class="tile-excerpt">{{ tile.excerpt }}</p>
         <p class="tile-date">{{ site.data.labels.last_revision_prefix }} {{ tile.date | date: '%B %e, %Y' }}</p>

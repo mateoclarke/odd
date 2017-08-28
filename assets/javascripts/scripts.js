@@ -88,6 +88,7 @@ var parseProjectsJSON = function(post_rows) {
       if (i < post_rows ) {
         var thisInstance = $(template_markup);
           thisInstance.find('.tile-title').text(post.title);
+          thisInstance.find('.tile-subtitle').text(post.subtitle);
           thisInstance.find('.tile-link').attr('href', post.url);
           thisInstance.find('.tile-img').css('background-image', 'url(' + post.img +')');
           thisInstance.find('.tile-date').text(post.date);

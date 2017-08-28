@@ -29,23 +29,11 @@ layout: default
   </div>
 </section>
 
-{% comment %}
 {% include page-section--projects.html
   section_headline=page.project_tiles_headline
   section_lede=page.project_tiles_lede_markdown
   section_theme="gray"
   rows=1
-  button_text=page.project_tiles_button_text
-  button_path=page.project_tiles_button_path %}
-  {% endcomment %}
-
-{% assign project_tiles = site.projects | sort_by: "date" | reverse %}
-{% include page-section--tiles.html
-  section_headline=page.project_tiles_headline
-  section_lede=page.project_tiles_lede_markdown
-  tiles=project_tiles
-  rows=1
-  section_theme="gray"
   button_text=page.project_tiles_button_text
   button_path=page.project_tiles_button_path %}
 
