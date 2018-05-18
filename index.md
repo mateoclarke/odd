@@ -1,5 +1,5 @@
 ---
-title: Changing Up Local Government
+title: Put Residents First.
 layout: home
 image: /assets/img/home.jpg
 # redirect_from: cityofaustin.github.io/innovation-fellows
