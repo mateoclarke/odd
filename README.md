@@ -1,9 +1,9 @@
-City of Austin Design, Technology, and Innovation Fellows Website
+City of Austin Office of Design & Delivery
 ==========================
 
-This repo is for our public-facing site, which is hosted on austintexas.io.  This site is the main funnel for fellows program recruiting and outreach.
+This repo is for our public-facing site, which is hosted on austintexas.io.  This site is the main funnel for recruiting and outreach.
 
-The site is forked from [usds.gov](https://usds.gov), which is built on the [U.S. Web Design Standards](https://playbook.cio.gov/designstandards/) and uses Jekyll to generate static pages.
+The site is forked from a fork of [usds.gov](https://usds.gov), which is built on the [U.S. Web Design Standards](https://playbook.cio.gov/designstandards/) and uses Jekyll to generate static pages.
 
 ## Setup
 ---
