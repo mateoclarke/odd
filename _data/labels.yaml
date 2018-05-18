@@ -20,8 +20,6 @@ site_nav:
     path: /principles/
   - label: Values
     path: /values/
-  - label: Civiqueso
-    path: /posts/
   - label: Join Us
     path: /join/
 social_icons:
