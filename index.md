@@ -34,7 +34,6 @@ events_button_path: '/events/'
 
 medium_headline: Follow Us on Medium
 medium_lede_markdown: 'Find us on Twitter and Medium as [Civiqueso](https://twitter.com/civiqueso/)'
-'
 medium_button_text: See recent posts
 medium_button_path: /posts/
 
