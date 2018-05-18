@@ -8,8 +8,9 @@ image: /assets/img/home.jpg
 
 permalink: /index.html
 
-secondary_headline: Put Residents First.
+secondary_headline: Put Residents First
 secondary_lede_markdown: We’re a new office within the City of Austin that’s dedicated to designing and building services for residents that grow and adapt with their needs.
+secondary_paragraph_markdown: Inspired by the success of programs at the [Consumer Financial Protection Bureau](https://cfpb.github.io/), [18F](https://18f.gsa.gov/), [Code for America](https://www.codeforamerica.org/), and the [U.S. Digital Service](https://www.usds.gov/), we partner with departments throughout the city to tackle some of their biggest challenges.
 secondary_section_buttons:
   - button_text: Learn more
     button_path: /about/
