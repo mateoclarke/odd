@@ -12,10 +12,10 @@ description:
   We’re a new office within the City of Austin
   that’s dedicated to designing and building services 
   for residents that grow and adapt with their needs. 
-baseurl: /innovation-fellows # the base hostname & protocol for your site
+baseurl: /odd # the base hostname & protocol for your site
 twitter_username: civiqueso
 github_username:  cityofaustin
-image: /innovation-fellows/assets/img/home.jpg
+image: /odd/assets/img/home.jpg
 medium_url: https://medium.com/civiqueso
 zilker_theme: dark
 theme: minima
