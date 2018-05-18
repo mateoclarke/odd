@@ -1,32 +1,34 @@
-intro_markdown: An official City of Austin website
+intro_markdown: An official website of the City of Austin
 site_title: |
-    Design, Technology, <nobr>& Innovation</nobr> Fellows
+    Office of Design & Delivery
 translate: Translate
 home: Home
 header_projects_button_text: Go to our Projects site
 header_projects_button_url: http://projects.austintexas.io/
 last_revision_prefix: Updated
 footer_headline: Be part of the change.
-footer_lede: We need top talent to help deliver the services that our residents deserve.
+footer_lede: We need top talent to design and deliver better services.
 footer_button_text: Join us
 footer_button_path: /join
-footer_credits: Office of Innovation • Communications & Technology Management
+footer_credits: Office of Design & Delivery • Communications & Technology Management
 site_nav:
   - label: Home
     path: /
   - label: About Us
     path: /about/
-  - label: Civiqueso Posts
+  - label: Principles
+    path: /principles/
+  - label: Values
+    path: /values/
+  - label: Civiqueso
     path: /posts/
-  - label: Events
-    path: /events/
   - label: Join Us
     path: /join/
 social_icons:
   medium_path: https://medium.com/city-of-austin-design-technology-innovation
-  medium_title: Read Medium Posts by @Civiqueso
+  medium_title: Medium Posts from @civiqueso
   github_path: https://github.com/cityofaustin
   github_title: Check out the City of Austin's Open Source projects
   twitter_path: https://twitter.com/civiqueso
-  twitter_title: Read Tweets by @Civiqueso
+  twitter_title: Tweets from @Civiqueso
 job_apply_button_text: Apply Now
